@@ -1,10 +1,701 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Test</title>
-</head>
-<body>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Sunshop</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
 
-</body>
+        <!-- Libs CSS -->
+            <!-- Font Awesome -->
+                <!-- lib -->
+        <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+            <!-- Magnific Popup -->
+                <!-- lib -->
+        <link rel="stylesheet" href="libs/magnific-popup/css/magnific-popup.css">
+                <!-- Style & Effect -->
+        <link rel="stylesheet" href="libs/magnific-popup/lib-bonus/style-effect-plus.css">
+            <!-- Owl Carousel -->
+                <!-- lib -->
+        <link rel="stylesheet" href="libs/owlcarousel/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="libs/owlcarousel/css/owl.theme.default.min.css">
+                <!-- Style icon control -->
+        <link rel="stylesheet" href="libs/owlcarousel/lib-bonus/css-bonus.css">
+
+        <!-- Project CSS -->
+            <!-- Font Project -->
+        <link rel="stylesheet" href="font/font-project.css">
+        <link rel="stylesheet" href="css/offcanvas.css">
+            <!-- Style CSS -->
+        <link rel="stylesheet" href="css/styles.css">
+            <!-- Responsive CSS -->
+        <link rel="stylesheet" href="css/responsive.css">
+
+    </head>
+    <body>
+
+        <!-- Content Project -->
+
+        <!-- [SUNSHOP-HEADER] -->
+        <section class="sunshop-header">
+            <div class="container">
+                <div class="sunshop-header__left float-left">
+                    <ul>
+                        <li><a href="">Sunshop</a></li>
+                        <li><a href="">MARKETPLACE</a></li>
+                        <li><a href="">HOT DEAL</a></li>
+                        <li><a href="">SMAGAZINE</a></li>
+                    </ul>
+                </div>
+                <div class="sunshop-header__right float-right">
+                    <ul>
+                        <li><a href="">CHAT</a></li>
+                        <li><a href="">TÀI KHOẢN</a></li>
+                        <li><a href="">TRỢ GIÚP</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+            <!-- [Navbar] -->
+            <div class="wrap-navbar">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="#"><img src="img/header/logo.png" alt=""></a>
+                        <div class="navbar__right ml-auto">
+                            <div class="" id="navbarSupportedContent">
+                                <form class="form-inline my-2 my-lg-0">
+                                    <input class="" type="search" placeholder="Tìm kiếm sản phẩm..." aria-label="Search">
+                                    <button class="btn btn-outline-success my-2 my-sm-0" type="button" href="javascript:void(0)"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                </form>
+                            </div>
+                            <div class="sunshop-cart d-flex">
+                                <img class="" src="img/header/cart.png" alt="">
+                                <p><span>0</span> sản phẩm</p>
+                            </div>
+                            <!-- [Button Menu Responsive] -->
+                            <div class="menu-reponsive">
+                                <i class="fa fa-th-large" aria-hidden="true"></i>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- end Navbar -->
+            
+            <!-- [sunshop-menu] -->
+            <div class="sunshop-menu__wrap">
+                <div class="sunshop-menu container">
+                    <ul>
+                        <li><a href="">Hàng mới về</a></li>
+                        <li><a href="">Trang phục</a></li>
+                        <li><a href="">Giày túi xách</a></li>
+                        <li><a href="">phụ kiện</a></li>
+                        <li><a href="">Thể thao</a></li>
+                        <li><a href="">Đồng hồ</a></li>
+                        <li><a href="">làm đẹp</a></li>
+                        <li><a href="">Tin tức</a></li>
+                        <li><a href="">Các thương hiệu</a></li>
+                        <li><a href="">Giảm giá đến 50%</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end .sunshop-menu -->
+        </section>
+        <!-- end .SUNSHOP-HEADER -->
+
+        
+        <!-- [SUNSHOP-INTRO] -->
+        <section class="sunshop-intro container">
+            <div class="sunshop-intro__utilities">
+                <ul>
+                    <li><span class="sunshop-intro__wrap-img"><img src="img/intro/icon-exchange.png" alt=""></span>Trả hàng trong <span>30</span> ngày</li>
+                    <li><span class="sunshop-intro__wrap-img"><img src="img/intro/icon-truck.png" alt=""></span>Giao hàng miễn phí</li>
+                    <li><span class="sunshop-intro__wrap-img"><img src="img/intro/icon-money.png" alt=""></span>Thanh toán linh hoạt</li>
+                    <li><span class="sunshop-intro__wrap-img"><img src="img/intro/icon-telephone.png" alt=""></span>Hotline: <span>090 4079496</span></li>
+                </ul>
+            </div>
+            <!-- end .sunshop-intro__utilities -->
+            <div class="row row-offcanvas row-offcanvas-left">
+                <div class="button-offcanvas container" style="">
+                    <button type="button" class="btn btn-primary btn-xs btn-offcanvas" data-toggle="offcanvas" style="width: 100%;">
+                        Danh mục sản phẩm
+                    </button>
+                </div>
+                <div class="col-xs-6 col-md-3 sidebar-offcanvas" id="sidebar">
+                    <div class="sunshop-intro__category">
+                        <div class="sunshop-intro__category__title">
+                            <h4>Danh mục sản phẩm</h4>
+                        </div>
+                        <div class="sunshop-intro__category__body">
+                            <ul>
+                                <li>
+                                    <a href="">Bán chạy nhất <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a href="">Hàng mới về <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a href="">Giảm giá đến 50% <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a href="">Quần áo <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                    <ul class="sunshop-intro__category__c2">
+                                        <li><a href=""><i class="fa fa-circle" aria-hidden="true"></i>Áo Thun</a></li>
+                                        <li><a href=""><i class="fa fa-circle" aria-hidden="true"></i>Áo Sơ Mi </a></li>
+                                        <li><a href=""><i class="fa fa-circle" aria-hidden="true"></i>Quần Jeans</a></li>
+                                        <li><a href=""><i class="fa fa-circle" aria-hidden="true"></i>Quần Shorts</a></li>
+                                        <li><a href=""><i class="fa fa-circle" aria-hidden="true"></i>Xem Thêm</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">Giày dép <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                    <ul class="sunshop-intro__category__c2">
+                                        <li><a href=""><i class="fa fa-circle" aria-hidden="true"></i>Giày Casual</a></li>
+                                        <li><a href=""><i class="fa fa-circle" aria-hidden="true"></i>Giày Da và Giày Tây</a></li>
+                                        <li><a href=""><i class="fa fa-circle" aria-hidden="true"></i>Sneakers</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">Túi, balo &amp; ví<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                </li>
+                                <a class="sunshop-intro__category__viewmore" href=""><i class="fa fa-plus-circle" aria-hidden="true"></i> Xem thêm</a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-9">
+                    <div class="sunshop-intro__banner">
+                        <img src="img/intro/banner.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- end .category -->
+            <div class="sunshop-intro__style">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="sunshop-intro__style__element">
+                            <img src="img/intro/style.jpg" alt="">
+                            <div>Phong cách</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="sunshop-intro__style__element">
+                            <img src="img/intro/style2.jpg" alt="">
+                            <div>Ấn tượng</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 sunshop-intro__style__giaohang">
+                        <div class="sunshop-intro__style__element style-other">
+                            <img src="img/intro/style-other.jpg" alt="">
+                            <div>Giao hàng<span>Miễn phí</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end .SUNSHOP-INTRO -->
+
+
+        <!-- [SUNSHOP-HOT] -->
+        <section class="sunshop-hot container">
+            <div class="sunshop-title">
+                <h2>Sản phẩm bán chạy</h2>
+            </div>
+            <!-- end .title -->
+            <div class="sunshop-hot__slider">
+                <div class="owl-carousel owl-hot owl-theme">
+                    <div class="item">
+                        <div class="sunshop__wrap-item">
+                            <img src="img/hot/image.jpg" alt="">
+                            <div class="sunshop-hot__content">
+                                <h4><a href="">Áo thun tay ngắn cổ tròn</a></h4>
+                                <div class="sunshine-rate">
+                                    <span class="sunshine-rate__old">340.000 <sup>đ</sup> - </span>
+                                    <span class="sunshine-rate__new">268.000 <sup>đ</sup></span>
+                                </div>
+                                <div class="sunshop-btn__buy">
+                                    <button>Mua hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end .item -->
+                    <div class="item">
+                        <div class="sunshop__wrap-item">
+                            <img src="img/hot/image2.jpg" alt="">
+                            <div class="sunshop-hot__content">
+                                <h4><a href="">Áo thun tay ngắn cổ tròn</a></h4>
+                                <div class="sunshine-rate">
+                                    <span class="sunshine-rate__old">340.000 <sup>đ</sup> - </span>
+                                    <span class="sunshine-rate__new">268.000 <sup>đ</sup></span>
+                                </div>
+                                <div class="sunshop-btn__buy">
+                                    <button>Mua hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end .item -->
+                    <div class="item">
+                        <div class="sunshop__wrap-item">
+                            <img src="img/hot/image21.jpg" alt="">
+                            <div class="sunshop-hot__content">
+                                <h4><a href="">Áo thun tay ngắn cổ tròn</a></h4>
+                                <div class="sunshine-rate">
+                                    <span class="sunshine-rate__old">340.000 <sup>đ</sup> - </span>
+                                    <span class="sunshine-rate__new">268.000 <sup>đ</sup></span>
+                                </div>
+                                <div class="sunshop-btn__buy">
+                                    <button>Mua hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end .item -->
+                    <div class="item">
+                        <div class="sunshop__wrap-item">
+                            <img src="img/hot/image3.jpg" alt="">
+                            <div class="sunshop-hot__content">
+                                <h4><a href="">Áo thun tay ngắn cổ tròn</a></h4>
+                                <div class="sunshine-rate">
+                                    <span class="sunshine-rate__old">340.000 <sup>đ</sup> - </span>
+                                    <span class="sunshine-rate__new">268.000 <sup>đ</sup></span>
+                                </div>
+                                <div class="sunshop-btn__buy">
+                                    <button>Mua hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end .item -->
+                    <div class="item">
+                        <div class="sunshop__wrap-item">
+                            <img src="img/hot/image.jpg" alt="">
+                            <div class="sunshop-hot__content">
+                                <h4><a href="">Áo thun tay ngắn cổ tròn</a></h4>
+                                <div class="sunshine-rate">
+                                    <span class="sunshine-rate__old">340.000 <sup>đ</sup> - </span>
+                                    <span class="sunshine-rate__new">268.000 <sup>đ</sup></span>
+                                </div>
+                                <div class="sunshop-btn__buy">
+                                    <button>Mua hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end .item -->
+                    <div class="item">
+                        <div class="sunshop__wrap-item">
+                            <img src="img/hot/image2.jpg" alt="">
+                            <div class="sunshop-hot__content">
+                                <h4><a href="">Áo thun tay ngắn cổ tròn</a></h4>
+                                <div class="sunshine-rate">
+                                    <span class="sunshine-rate__old">340.000 <sup>đ</sup> - </span>
+                                    <span class="sunshine-rate__new">268.000 <sup>đ</sup></span>
+                                </div>
+                                <div class="sunshop-btn__buy">
+                                    <button>Mua hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end .item -->
+                </div>
+            </div>
+            <!-- end .slider -->
+            <div class="sunshop-hot__banner">
+                <img src="img/hot/banner.png" alt="">
+            </div>
+            <!-- end .banner -->
+        </section>
+        <!-- end .SUNSHOP-HOT -->
+
+        <!-- [SUNSHOP-PRODUCT] -->
+        <section class="sunshop-hot container">
+            <div class="sunshop-title">
+                <h2>Tất cả sản phẩm</h2>
+                <div class="sunshop-title__menu">
+                    <ul>
+                        <li><a href="">Nam</a></li>
+                        <li class="active"><a href="">Nữ</a></li>
+                        <li><a href="">Trẻ em</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <!-- end .title -->
+            <div class="sunshop-hot__slider">
+                <div class="owl-carousel owl-hot owl-theme">
+                    <div class="item">
+                        <div class="sunshop__wrap-item">
+                            <img src="img/hot/image.jpg" alt="">
+                            <div class="sunshop-hot__content">
+                                <h4><a href="">Áo thun tay ngắn cổ tròn</a></h4>
+                                <div class="sunshine-rate">
+                                    <span class="sunshine-rate__old">340.000 <sup>đ</sup> - </span>
+                                    <span class="sunshine-rate__new">268.000 <sup>đ</sup></span>
+                                </div>
+                                <div class="sunshop-btn__buy">
+                                    <button>Mua hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end .wrap-item -->
+                        <div class="sunshop__wrap-item">
+                            <img src="img/hot/image.jpg" alt="">
+                            <div class="sunshop-hot__content">
+                                <h4><a href="">Áo thun tay ngắn cổ tròn</a></h4>
+                                <div class="sunshine-rate">
+                                    <span class="sunshine-rate__old">340.000 <sup>đ</sup> - </span>
+                                    <span class="sunshine-rate__new">268.000 <sup>đ</sup></span>
+                                </div>
+                                <div class="sunshop-btn__buy">
+                                    <button>Mua hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end .wrap-item -->
+                    </div>
+                    <!-- end .item -->
+                    <div class="item">
+                        <div class="sunshop__wrap-item">
+                            <img src="img/hot/image2.jpg" alt="">
+                            <div class="sunshop-hot__content">
+                                <h4><a href="">Áo thun tay ngắn cổ tròn</a></h4>
+                                <div class="sunshine-rate">
+                                    <span class="sunshine-rate__old">340.000 <sup>đ</sup> - </span>
+                                    <span class="sunshine-rate__new">268.000 <sup>đ</sup></span>
+                                </div>
+                                <div class="sunshop-btn__buy">
+                                    <button>Mua hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end .wrap-item -->
+                        <div class="sunshop__wrap-item">
+                            <img src="img/hot/image2.jpg" alt="">
+                            <div class="sunshop-hot__content">
+                                <h4><a href="">Áo thun tay ngắn cổ tròn</a></h4>
+                                <div class="sunshine-rate">
+                                    <span class="sunshine-rate__old">340.000 <sup>đ</sup> - </span>
+                                    <span class="sunshine-rate__new">268.000 <sup>đ</sup></span>
+                                </div>
+                                <div class="sunshop-btn__buy">
+                                    <button>Mua hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end .wrap-item -->
+                    </div>
+                    <!-- end .item -->
+                    <div class="item">
+                        <div class="sunshop__wrap-item">
+                            <img src="img/hot/image21.jpg" alt="">
+                            <div class="sunshop-hot__content">
+                                <h4><a href="">Áo thun tay ngắn cổ tròn</a></h4>
+                                <div class="sunshine-rate">
+                                    <span class="sunshine-rate__old">340.000 <sup>đ</sup> - </span>
+                                    <span class="sunshine-rate__new">268.000 <sup>đ</sup></span>
+                                </div>
+                                <div class="sunshop-btn__buy">
+                                    <button>Mua hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end .wrap-item -->
+                        <div class="sunshop__wrap-item">
+                            <img src="img/hot/image21.jpg" alt="">
+                            <div class="sunshop-hot__content">
+                                <h4><a href="">Áo thun tay ngắn cổ tròn</a></h4>
+                                <div class="sunshine-rate">
+                                    <span class="sunshine-rate__old">340.000 <sup>đ</sup> - </span>
+                                    <span class="sunshine-rate__new">268.000 <sup>đ</sup></span>
+                                </div>
+                                <div class="sunshop-btn__buy">
+                                    <button>Mua hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end .wrap-item -->
+                    </div>
+                    <!-- end .item -->
+                    <div class="item">
+                        <div class="sunshop__wrap-item">
+                            <img src="img/hot/image3.jpg" alt="">
+                            <div class="sunshop-hot__content">
+                                <h4><a href="">Áo thun tay ngắn cổ tròn</a></h4>
+                                <div class="sunshine-rate">
+                                    <span class="sunshine-rate__old">340.000 <sup>đ</sup> - </span>
+                                    <span class="sunshine-rate__new">268.000 <sup>đ</sup></span>
+                                </div>
+                                <div class="sunshop-btn__buy">
+                                    <button>Mua hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end .wrap-item -->
+                        <div class="sunshop__wrap-item">
+                            <img src="img/hot/image3.jpg" alt="">
+                            <div class="sunshop-hot__content">
+                                <h4><a href="">Áo thun tay ngắn cổ tròn</a></h4>
+                                <div class="sunshine-rate">
+                                    <span class="sunshine-rate__old">340.000 <sup>đ</sup> - </span>
+                                    <span class="sunshine-rate__new">268.000 <sup>đ</sup></span>
+                                </div>
+                                <div class="sunshop-btn__buy">
+                                    <button>Mua hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end .wrap-item -->
+                    </div>
+                    <!-- end .item -->
+                    <div class="item">
+                        <div class="sunshop__wrap-item">
+                            <img src="img/hot/image.jpg" alt="">
+                            <div class="sunshop-hot__content">
+                                <h4><a href="">Áo thun tay ngắn cổ tròn</a></h4>
+                                <div class="sunshine-rate">
+                                    <span class="sunshine-rate__old">340.000 <sup>đ</sup> - </span>
+                                    <span class="sunshine-rate__new">268.000 <sup>đ</sup></span>
+                                </div>
+                                <div class="sunshop-btn__buy">
+                                    <button>Mua hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end .wrap-item -->
+                        <div class="sunshop__wrap-item">
+                            <img src="img/hot/image.jpg" alt="">
+                            <div class="sunshop-hot__content">
+                                <h4><a href="">Áo thun tay ngắn cổ tròn</a></h4>
+                                <div class="sunshine-rate">
+                                    <span class="sunshine-rate__old">340.000 <sup>đ</sup> - </span>
+                                    <span class="sunshine-rate__new">268.000 <sup>đ</sup></span>
+                                </div>
+                                <div class="sunshop-btn__buy">
+                                    <button>Mua hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end .wrap-item -->
+                    </div>
+                    <!-- end .item -->
+                    <div class="item">
+                        <div class="sunshop__wrap-item">
+                            <img src="img/hot/image2.jpg" alt="">
+                            <div class="sunshop-hot__content">
+                                <h4><a href="">Áo thun tay ngắn cổ tròn</a></h4>
+                                <div class="sunshine-rate">
+                                    <span class="sunshine-rate__old">340.000 <sup>đ</sup> - </span>
+                                    <span class="sunshine-rate__new">268.000 <sup>đ</sup></span>
+                                </div>
+                                <div class="sunshop-btn__buy">
+                                    <button>Mua hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end .wrap-item -->
+                        <div class="sunshop__wrap-item">
+                            <img src="img/hot/image2.jpg" alt="">
+                            <div class="sunshop-hot__content">
+                                <h4><a href="">Áo thun tay ngắn cổ tròn</a></h4>
+                                <div class="sunshine-rate">
+                                    <span class="sunshine-rate__old">340.000 <sup>đ</sup> - </span>
+                                    <span class="sunshine-rate__new">268.000 <sup>đ</sup></span>
+                                </div>
+                                <div class="sunshop-btn__buy">
+                                    <button>Mua hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end .wrap-item -->
+                    </div>
+                    <!-- end .item -->
+                </div>
+            </div>
+            <!-- end .slider -->
+        </section>
+
+
+
+        <!-- [SUNSHOP-NEW] -->
+        <section class="sunshop-new container">
+            <div class="sunshop-title">
+                <h2>Tin tức</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 sunshop-new-rps">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="img/new/image.jpg" alt="">
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="sunshop-new__time">
+                                <span>22/6/2016</span> <span>Đăng bởi Giangle</span> <span>0 Coments</span>
+                            </div>
+                            <div class="sunshop-new__content">
+                                <h3><a href="">Chiến lược chọn mua mỹ phẩm thông minh</a></h3>
+                                <p>Một khi đã biết chăm chút vẻ ngoài cho bản thân mình, định kỳ, các cô nàng sẽ phải mất một khoản kha khá để đầu tư cho các sản phẩm dưỡng da, đồ mỹ phẩm...</p>
+                            </div>
+                            <div class="sunshop-new__viewmore">
+                                <a href="">Xem thêm <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 sunshop-new-rps">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="img/new/image2.jpg" alt="">
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="sunshop-new__time">
+                                <span>22/6/2016</span> <span>Đăng bởi Giangle</span> <span>0 Coments</span>
+                            </div>
+                            <div class="sunshop-new__content">
+                                <h3><a href="">Chiến lược chọn mua mỹ phẩm thông minh</a></h3>
+                                <p>Một khi đã biết chăm chút vẻ ngoài cho bản thân mình, định kỳ, các cô nàng sẽ phải mất một khoản kha khá để đầu tư cho các sản phẩm dưỡng da, đồ mỹ phẩm...</p>
+                            </div>
+                            <div class="sunshop-new__viewmore">
+                                <a href="">Xem thêm <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- [SUNSHOP-CUSTOMER] -->
+        <div class="sunshop-customer">
+            <div class="container">
+                <div class="owl-carousel owl-customer owl-theme">
+                    <div class="item"><img src="img/customer/logo1.png" alt=""></div>
+                    <div class="item"><img src="img/customer/logo2.png" alt=""></div>
+                    <div class="item"><img src="img/customer/logo3.png" alt=""></div>
+                    <div class="item"><img src="img/customer/logo4.png" alt=""></div>
+                    <div class="item"><img src="img/customer/logo5.png" alt=""></div>
+                    <div class="item"><img src="img/customer/logo6.png" alt=""></div>
+                    <div class="item"><img src="img/customer/logo1.png" alt=""></div>
+                    <div class="item"><img src="img/customer/logo2.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <!-- end .SUNSHOP-CUSTOMER -->
+
+        
+        <!-- [FOOTER] -->
+        <footer>
+            <div class="container">
+                <div class="sunshop-footer__content">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="sunshop-footer__title">
+                                <a href=""><img src="img/header/logo.png" alt=""></a>
+                            </div>
+                            <ul class="sunshop-footer__body">
+                                <li><img class="sunshop-footer__title__icon" src="img/footer/facebook-placeholder-for-locate-places-on-maps.svg" alt="">Tầng 4, Tòa nhà Hanoi Group  Số 442 Đội Cấn, P. Cống Vị, Q. Ba Đình, Hà Nội</li>
+                                <li>
+                                    <span><img src="img/footer/old-handphone.svg" alt="">(04) 6674 2332</span> - &nbsp;<span><img src="img/footer/telephone.svg" alt="">(04) 3786 8904</span>
+                                </li>
+                                <li><span><img src="img/footer/old-handphone.svg" alt="">(08) 6680 9686</span></li>
+                                <li><img class="sunshop-footer__title__icon" src="img/footer/email-filled-closed-envelope.svg" alt=""><a class="footer-mail" href="">support@bizweb.vn</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <div class="sunshop-footer__title">
+                                <h3>Chuyển hàng</h3>
+                            </div>
+                            <ul class="sunshop-footer__body">
+                                <li><a class="footer-link" href="">Mua sắm trực tuyến</a></li>
+                                <li><a class="footer-link" href="">Đến từ chúng tôi gửi đến</a></li>
+                                <li><a class="footer-link" href="">Chính sách vận chuyển</a></li>
+                                <li><a class="footer-link" href="">Vận chuyển thông tin</a></li>
+                                <li><a class="footer-link" href="">Phiếu quà tặng</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <div class="sunshop-footer__title">
+                                <h3>Hỗ trợ</h3>
+                            </div>
+                            <ul class="sunshop-footer__body">
+                                <li><a href="" class="footer-link">Câu chuyện của chúng ta</a></li>
+                                <li><a href="" class="footer-link">Thanh toán an toàn</a></li>
+                                <li><a href="" class="footer-link">Tùy chọn Vận Chuyển</a></li>
+                                <li><a href="" class="footer-link">Chính sách vận chuyển</a></li>
+                                <li><a href="" class="footer-link">Liên hệ với chúng tôi</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <div class="sunshop-footer__title">
+                                <h3>Thông tin</h3>
+                            </div>
+                            <ul class="sunshop-footer__body">
+                                <li><a href="" class="footer-link">Về Chúng Tôi</a></li>
+                                <li><a href="" class="footer-link">Điều khoản & điều kiện</a></li>
+                                <li><a href="" class="footer-link">Chính Sách Riêng Tư</a></li>
+                                <li><a href="" class="footer-link">Đơn đặt hàng và Returns</a></li>
+                                <li><a href="" class="footer-link">Sơ đồ trang web</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <div class="sunshop-footer__title">
+                                <h3>Tài khoản</h3>
+                            </div>
+                            <ul class="sunshop-footer__body">
+                                <li><a href="" class="footer-link">Xem Giỏ hàng</a></li>
+                                <li><a href="" class="footer-link">Sản phẩm yêu thích</a></li>
+                                <li><a href="" class="footer-link">Kiểm tra</a></li>
+                                <li><a href="" class="footer-link">Theo dõi đặt hàng của tôi</a></li>
+                                <li><a href="" class="footer-link">Giúp</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="container">
+                    <p>&copy; Copyright 2015 - 2016</p>
+                    <ul>
+                        <li><img src="img/footer/card.png" alt=""></li>
+                        <li><img src="img/footer/card1.png" alt=""></li>
+                        <li><img src="img/footer/card2.png" alt=""></li>
+                        <li><img src="img/footer/card3.png" alt=""></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </footer>
+        <!-- end .FOOTER -->
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="bootstrap4/js/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="bootstrap4/js/bootstrap.min.js"></script>
+
+        <!-- Libs JavaScript -->
+            <!-- Magnific Popup -->
+                <!-- lib -->
+        <script src="libs/magnific-popup/js/jquery.magnific-popup.min.js"></script>
+                <!-- Magnific popup READY , Effect & Close popup-->
+        <script src="libs/magnific-popup/lib-bonus/js-bonus.js"></script>
+            <!-- Owl Carousel -->
+                <!-- lib -->
+        <script src="libs/owlcarousel/js/owl.carousel.min.js"></script>
+                <!-- Start & Option OwlCarousel -->
+        <script src="libs/owlcarousel/lib-bonus/js-bonus.js"></script>
+
+        <!-- JavaScript Project -->
+        <script src="js/offcanvas.js"></script>
+        <script src="js/js-project.js"></script>
+
+    </body>
 </html>

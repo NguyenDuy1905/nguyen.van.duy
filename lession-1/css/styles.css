@@ -1,0 +1,589 @@
+
+/*Reset css*/
+/*h1, h2, h3, h4, h5, h6, p, img, ol, ul, li, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}*/
+
+input:focus, input:active, textarea:focus, textarea:active, button:focus, button:active {
+	outline: none;
+}
+a:hover {
+	text-decoration: none;
+}
+
+
+/*Main content Project*/
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1170px;
+	}
+}
+body {
+	font-family: 'Roboto-Regular';
+	font-size: 14px;
+	color: #484848;
+	background-color: #ffffff;
+}
+h2 {
+	font-size: 28px;
+	color: #00c5c7;
+}
+h3 {
+	font-size: 18px;
+}
+h4 {
+	font-size: 16px;
+}
+p {
+	margin: 0;
+}
+
+
+/*[SUNSHOP-HEADER]*/
+.sunshop-header {
+	background-color: #f3f3f3;
+}
+.sunshop-header ul {
+	margin: 0;
+	padding: 0;
+}
+.sunshop-header ul li {
+	display: inline-block;
+}
+.sunshop-header ul li a {
+	text-transform: uppercase;
+	color: #111111;
+	line-height: 30px;
+	margin-right: 23px;
+	font-size: 12px;
+	font-family: 'Roboto-Bold';
+	transition: 0.3s;
+}
+.sunshop-header ul li a:hover {
+	color: #01C3C3;
+}
+.sunshop-header__right ul li:last-child a {
+	margin-right: 0;
+}
+.wrap-navbar {
+	background-color: #170e10;
+}
+.wrap-navbar nav {
+    padding: 7px 0 9px 0;
+}
+.wrap-navbar .navbar__right {
+	display: flex;
+	align-items: center;
+}
+.wrap-navbar .navbar__right .sunshop-cart {
+	align-items: center;
+}
+.wrap-navbar .navbar__right form {
+	margin-right: 48px;
+    height: 36px;
+}
+.wrap-navbar .navbar__right input {
+	border-radius: 4px 0 0 4px;
+	font-size: 12px;
+	height: 100%;
+    width: 350px;
+    border: none;
+    transition: 0.3s;
+}
+.wrap-navbar .navbar__right input:focus {
+	border: solid 1px #01C3C3;
+}
+.wrap-navbar .navbar__right button {
+    background-color: #01C3C3;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    margin-left: -1px;
+}
+.wrap-navbar .navbar__right button:focus {
+	box-shadow: 0 0 0 3px rgba(1, 195, 195, 0.5);
+}
+.sunshop-cart {
+	color: #fff;
+	transition: 0.3s;
+}
+.sunshop-cart:hover {
+	cursor: pointer;
+}
+.sunshop-cart img {
+	margin-right: 12px;
+    margin-top: -5px;
+}
+.sunshop-cart p {
+	transition: 0.3s;
+}
+.sunshop-cart:hover p {
+	color: #01C3C3;
+}
+	/*Menu*/
+.sunshop-menu ul li a {
+	font-size: 14px;
+	color: #484949;
+	font-family: 'Roboto-Regular';
+	margin-left: 16px;
+	margin-right: 16px;
+	line-height: 40px;
+}
+.sunshop-menu ul li:first-child a {
+	margin-left: 0;
+}
+.sunshop-menu ul li:last-child a {
+	margin-right: 0;
+}
+
+
+
+/*[SUNSHOP-INTRO]*/
+.sunshop-intro__utilities {
+	text-align: center;
+	padding-top: 19px;
+    padding-bottom: 9px;
+}
+.sunshop-intro__utilities ul {
+	padding: 0;
+}
+.sunshop-intro__utilities ul li {
+	display: inline-block;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+.sunshop-intro__utilities ul li:first-child {
+	padding-left: 0;
+}
+.sunshop-intro__utilities ul li:last-child {
+	padding-right: 0;
+}
+.sunshop-intro__utilities ul li span.sunshop-intro__wrap-img {
+	background-color: #484848;
+	border-radius: 50%;
+	width: 39px;
+	height: 39px;
+	display: inline-block;
+	line-height: 39px;
+	margin-right: 12px;
+}
+
+/*Banner*/
+.sunshop-intro__banner img {
+	width: 100%;
+	border-radius: 1px;
+}
+
+/*Category*/
+.sunshop-intro__category {
+	border: solid 1px #02C5BF;
+	border-radius: 3px;
+}
+.sunshop-intro__category__title {
+	background-color: #02C5BF;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 12px 32px 5px 32px;
+}
+.sunshop-intro__category__body {
+	padding: 10px 21px 17px 32px;
+}
+.sunshop-intro__category__body ul {
+	padding: 0;
+	margin: 0;
+}
+.sunshop-intro__category__body ul li {
+	list-style-type: none;
+	padding: 4px 0;
+}
+.sunshop-intro__category__body ul li a {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: 'Roboto-Bold';
+	color: #454545;
+	transition: 0.3s;
+}
+.sunshop-intro__category__body ul li a:hover {
+	color: #02C5BF;
+}
+.sunshop-intro__category__body ul li a i {
+	float: right;
+	font-weight: bold;
+}
+.sunshop-intro__category__body ul li:last-of-type {
+	padding-bottom: 6px;
+}
+.sunshop-intro__category__viewmore {
+	color: #454545;
+}
+.sunshop-intro__category__viewmore:hover {
+	color: #02C5BF;
+}
+.sunshop-intro__category__viewmore i {
+	color: #03C5C5;
+	margin-right: 5px;
+}
+	/*Category c2*/
+.sunshop-intro__category__c2 li {
+	padding: 3px 0 3px 9px !important;
+}
+.sunshop-intro__category__c2 li:first-child {
+	padding-top: 5px !important;
+}
+.sunshop-intro__category__c2 li a {
+	font-family: 'Roboto-Regular' !important;
+	text-transform: unset !important;
+}
+.sunshop-intro__category__c2 li a i {
+    float: unset !important;
+    font-weight: normal !important;
+    font-size: 6px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+/*Intro__style*/
+.sunshop-intro__style {
+	margin-top: 30px;
+}
+.sunshop-intro__style__element {
+	position: relative;
+	border-radius: 3px;
+}
+.sunshop-intro__style__element img {
+	width: 100%;
+}
+.sunshop-intro__style__element div {
+	position: absolute;
+	width: 242px;
+	height: 74px;
+	border: solid 1px #fff;
+	top: calc(50% - 37px);
+	left: calc(50% - 121px);
+	color: #fff;
+	font-size: 44px;
+	font-family: 'iCielBambola';
+	text-align: center;
+	line-height: 74px;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+.sunshop-intro__style__element.style-other {
+	/*background-color: #00C7C4;*/
+}
+.sunshop-intro__style__element.style-other div {
+	background-color: transparent;
+	width: calc(100% - 46px);
+	height: calc(100% - 46px);
+	top: 23px;
+	left: 23px;
+    padding-top: 16px;
+}
+.sunshop-intro__style__element.style-other div span {
+	display: block;
+	font-size: 59px;
+	font-family: 'Roboto-Black';
+    margin-top: -18px;
+}
+
+
+/*[SUNSHOP-HOT]*/
+.sunshop-hot {
+    margin-top: 40px;
+}
+.sunshop-hot .owl-dots {
+	display: none;
+}
+.sunshop-hot__content h4 {
+    margin-top: 16px;
+    margin-bottom: 6px;
+}
+.sunshop-hot__content h4 a {
+    color: #454545;
+    transition: 0.3s;
+}
+.sunshop-hot__content h4 a:hover {
+	color: #01c4c4;
+}
+	/*sunshop rate*/
+.sunshine-rate {
+	overflow: hidden;
+}
+.sunshine-rate__old {
+	font-size: 12px;
+	color: #959595;
+	position: relative;
+}
+.sunshine-rate__old::after {
+	position: absolute;
+	content: '';
+	height: 1px;
+	background-color: #959595;
+	width: 100%;
+	top: 50%;
+    left: -17px;
+}
+.sunshine-rate__old sup {
+    margin-right: 3px;
+}
+.sunshine-rate__new {
+	font-size: 18px;
+	font-family: 'Roboto-Black';
+	color: #01c4c4;
+	padding-left: 3px;
+}
+.sunshop-btn__buy {
+    margin-top: 7px;
+}
+.sunshop-btn__buy button {
+	height: 43px;
+	width: 130px;
+	border: none;
+	border-radius: 3px;
+	color: #4d4d4d;
+	font-size: 16px;
+	font-family: 'Roboto-Light';
+	transition: 0.3s;
+}
+.sunshop-btn__buy button:hover {
+	background-color: #01C3C3;
+	color: #fff;
+	cursor: pointer;
+}
+	/*Banner*/
+.sunshop-hot__banner {
+    /*padding-top: 40px;*/
+    padding-bottom: 7px;
+}
+.sunshop-hot__banner img {
+	width: 100%;
+}
+
+.sunshop-hot__slider {
+	margin-left: -10px;
+	margin-right: -10px;
+}
+.sunshop-hot__slider .item {
+	padding: 10px;
+}
+
+
+/*[SUNSHOP-PRODUCT]*/
+.sunshop__wrap-item {
+	margin-bottom: 40px;
+}
+
+
+/*[SUNSHOP-NEW]*/
+.sunshop-new  {
+	padding-bottom: 46px;
+    padding-top: 12px;
+}
+.sunshop-new__time {
+    border-bottom: solid 1px #EBEBEB;
+    padding-bottom: 9px;
+    margin-top: -5px;
+}
+.sunshop-new__time span {
+	font-size: 13px;
+	color: #959595;
+}
+.sunshop-new__content h3 {
+    color: #232323;
+    line-height: 21px;
+    margin-top: 11px;
+    margin-bottom: 6px;
+}
+.sunshop-new__content h3 a {
+	color: #232323;
+    line-height: 21px;
+    transition: 0.3s;
+}
+.sunshop-new__content h3 a:hover {
+	color: #01c4c4;
+}
+.sunshop-new__content p {
+	font-family: 'Roboto-Light';
+	color: #555555;
+	line-height: 19px;
+}
+.sunshop-new__viewmore {
+	padding-top: 11px;
+}
+.sunshop-new__viewmore a {
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'Roboto-Light';
+    color: #555555;
+}
+.sunshop-new__viewmore a:hover {
+	color: #01c4c4;
+}
+.sunshop-new__viewmore a i {
+	margin-left: 5px;
+}
+
+
+
+/*[SUNSHOP-CUSTOMER]*/
+.sunshop-customer {
+	background-color: #F5F5F5;
+}
+.sunshop-customer .owl-carousel {
+	padding-top: 29px;
+	padding-bottom: 20px;
+}
+.sunshop-customer .owl-carousel .item {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.sunshop-customer .owl-carousel .owl-dots {
+	display: none;
+}
+.owl-nav div.owl-next span {
+	right: 0;
+}
+
+
+/*[FOOTER]*/
+footer {
+	background-color: #0e100e;
+}
+.sunshop-footer__content {
+    padding-bottom: 33px;
+}
+.sunshop-footer__body {
+	padding-left: 0;
+}
+.sunshop-footer__body li {
+	list-style-type: none;
+	color: #bcbec0;
+	line-height: 30px;
+	display: flex;
+    align-items: baseline;
+}
+.sunshop-footer__body li a.footer-link {
+	color: #bcbec0;
+    line-height: 30px;
+    transition: 0.3s;
+}
+.sunshop-footer__body li a.footer-link:hover {
+	color: #01C5C4;
+}
+.sunshop-footer__body li a.footer-mail {
+	color: #01C5C4;
+	font-style: italic;
+}
+.sunshop-footer__body li img {
+	height: 15px;
+	margin-right: 10px;
+	vertical-align: -3px;
+}
+.sunshop-footer__title__icon {
+	/*margin-top: 5px;*/
+}
+.sunshop-footer__title img {
+	margin-top: 25px;
+    margin-bottom: 45px;
+}
+.sunshop-footer__title h3 {
+	text-transform: uppercase;
+	color: #fff;
+	margin-top: 57px;
+	position: relative;
+	margin-bottom: 48px;
+}
+.sunshop-footer__title h3::after {
+	position: absolute;
+	content: '';
+	height: 1px;
+	width: 100%;
+	background-color: #323230;
+	left: 0;
+	bottom: -27px;
+}
+.footer__copyright {
+	border-top: solid 1px #292B28;
+	padding: 5px 0 26px 0;
+}
+.footer__copyright p {
+	color: #AFB0B2;
+	float: left;
+}
+.footer__copyright ul li {
+	list-style-type: none;
+	display: inline-block;
+	float: right;
+}
+.footer__copyright ul li img {
+	margin: 0 11px;
+}
+.footer__copyright ul li:first-child img {
+	margin-right: 0;
+}
+
+
+/*[SUNSHOP-TITLE]*/
+.sunshop-title {
+	border-bottom: solid 1px #F3F3F3;
+	margin-bottom: 33px;
+}
+.sunshop-title h2 {
+	color: #00c5c7;
+	display: inline-block;
+	position: relative;
+}
+.sunshop-title h2::after {
+	position: absolute;
+	content: '';
+	height: 2px;
+	width: 100%;
+	background-color: #00c5c7;
+	left: 0;
+	bottom: -9px;
+}
+.sunshop-title__menu {
+    z-index: 999999;
+    position: relative;
+    float: right;
+    margin-right: 100px;
+}
+.sunshop-title__menu ul li {
+	list-style-type: none;
+	display: inline-block;
+}
+.sunshop-title__menu ul li a {
+    font-size: 18px;
+    color: #959595;
+    border-right: solid 1px #ECECEC;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: 0.3s;
+}
+.sunshop-title__menu ul li.active a {
+	color: #03C6C8;
+}
+.sunshop-title__menu ul li a:hover {
+	color: #03C6C8;
+	text-decoration: none;
+}
+.sunshop-title__menu ul li:last-child a {
+	border-right: none;
+}
+
+
+
+/*Button offcanvas*/
+@media (min-width: 992px) {
+	.button-offcanvas {
+		display: none;
+	}
+}
+
+.button-offcanvas button {
+	margin-bottom: 30px;
+}
+

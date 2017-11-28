@@ -1,0 +1,79 @@
+
+.owl-carousel {
+	position: relative;
+}
+
+.owl-nav {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	margin: 0 !important;
+}
+.owl-nav div {
+	margin: 0 !important;
+	padding: 0 !important;
+	/*width: 10%;*/
+	height: 100%;
+	position: absolute;
+	background-color: transparent !important;
+	border-radius: 0 !important;
+}
+.owl-nav div.owl-prev {
+	left: 0;
+}
+.owl-nav div.owl-next {
+	right: 0;
+}
+/*.owl-nav div.owl-prev:hover {
+	background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.1) , transparent) !important;
+	background: -o-linear-gradient(right, rgba(0, 0, 0, 0.1), transparent) !important;
+	background: -moz-linear-gradient(right, rgba(0, 0, 0, 0.1), transparent) !important;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.1) , transparent) !important;
+}
+.owl-nav div.owl-next:hover {
+	background: -webkit-linear-gradient(left, transparent, rgba(0, 0, 0, 0.1) ) !important;
+	background: -o-linear-gradient(right, transparent, rgba(0, 0, 0, 0.1)) !important;
+	background: -moz-linear-gradient(right, transparent, rgba(0, 0, 0, 0.1)) !important;
+	background: linear-gradient(to right, transparent , rgba(0, 0, 0, 0.1)) !important;
+}*/
+.owl-nav img {
+	width: 15px;
+    opacity: 0.5;
+    margin-top: 11px;
+}
+.owl-nav div.owl-prev:hover img, .owl-nav div.owl-next:hover img {
+	opacity: 0.9;
+}
+
+.owl-dots {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+/*Bonus*/
+.owl-nav span {
+    position: absolute;
+    top: calc(50% - 15px);
+    width: 38px;
+    height: 38px;
+    background-color: #EBEBEB;
+    border-radius: 50%;
+    text-align: center;
+    transition: 0.3s;
+}
+.owl-nav span:hover {
+	background-color: #04C6C6;
+}
+
+
+/*[SUNSHOP-HOT] slider*/
+.owl-hot .owl-nav {
+    height: 38px;
+    top: -87px;
+}
+.owl-hot .owl-nav div.owl-prev {
+	left: unset;
+    right: 82px;
+}
