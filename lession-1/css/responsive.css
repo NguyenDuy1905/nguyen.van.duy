@@ -1,0 +1,233 @@
+
+.menu-reponsive i {
+    color: #02C5BF;
+    font-size: 34px;
+    margin-left: 46px;
+}
+@media (min-width: 1200px) {
+	.menu-reponsive {
+		display: none;
+	}
+}
+
+@media (max-width: 1199px) {
+	/*[MENU]*/
+	.sunshop-menu__wrap {
+		display: none;
+	}
+	.sunshop-menu {
+		padding-top: 22px;
+	    padding-bottom: 20px;
+    }
+
+	.sunshop-menu ul li {
+		display: block;
+	}
+	.sunshop-menu ul li a {
+	    margin: 0;
+	    border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+	    width: 100%;
+	    display: block;
+	}
+	.sunshop-menu ul li:last-child a {
+		border-bottom: none;
+	}
+
+
+	/*[UTILITIES]*/
+	.sunshop-intro__utilities ul li {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+
+	/*[INTRO]*/
+	.sunshop-intro__style__element.style-other div {
+		padding-top: 0;
+	}
+	.sunshop-intro__style__element.style-other div span {
+		margin-top: -25px;
+		font-size: 40px;
+	}
+
+	/*[NEW]*/
+	.sunshop-new img {
+		width: 100%;
+	}
+}
+
+@media (max-width: 991px) {
+	/*[HEADER]*/
+	/*[Logo]*/
+	.navbar-brand {
+		margin-right: 0;
+	}
+	.navbar-brand img {
+		width: 180px;
+	}
+	/*form search*/
+	.wrap-navbar .navbar__right input {
+		width: 0;
+		padding: 0;
+	}
+	
+	.wrap-navbar .navbar__right button {
+		border-radius: 4px;
+	    background: transparent;
+	    color: #01C3C3;
+	}
+	.wrap-navbar .navbar__right button:focus {
+		outline: none;
+		box-shadow: none;
+	}
+	.menu-reponsive i {
+		margin-left: 20px;
+	}
+	.wrap-navbar .navbar__right form {
+		margin-right: 20px;
+	}
+
+	/*[UTILITIES]*/
+	.sunshop-intro__utilities {
+		text-align: left;
+	}
+	.sunshop-intro__utilities ul li {
+		width: 49%;
+	    padding: 10px 0px;
+	}
+	.sunshop-intro__utilities ul li span.sunshop-intro__wrap-img {
+		text-align: center;
+	}
+
+	/*[INTRO]*/
+	.sunshop-intro__style__element div {
+	    width: 70%;
+        left: 15%;
+        font-size: 30px;
+	}
+	.sunshop-intro__style__element.style-other div {
+		line-height: 50px;
+	}
+	.sunshop-intro__style__element.style-other div span {
+		margin-top: -22px;
+	    font-size: 30px;
+	}
+
+	/*[NEW]*/
+	.sunshop-new .sunshop-new-rps {
+		margin-bottom: 35px;
+	}
+
+	/*[FOOTER]*/
+	.sunshop-footer__title img {
+	    margin-bottom: 25px;
+	}
+	.sunshop-footer__title h3 {
+		margin-top: 7px;
+	    margin-bottom: 13px;
+        text-transform: none;
+	}
+	.sunshop-footer__title h3::after {
+	    bottom: -7px;
+	}
+	.sunshop-footer__content {
+	    padding-bottom: 13px;
+	}
+}
+
+
+@media (max-width: 767px) {
+	.sunshop-header__left {
+		display: none;
+	}
+
+	/*[INTRO]*/
+	.sunshop-intro__style__giaohang {
+		display: none;
+	}
+
+	/*[HEADER]*/
+	.wrap-navbar {
+		position: relative;
+	}
+	.wrap-navbar .navbar__right input {
+		position: absolute;
+	    background-color: transparent;
+	    width: calc(100% + 30px);
+	    left: -15px;
+	    height: 50px;
+	    bottom: -50px;
+	    border-top: solid 1px rgba(255, 255, 255, 0.5);
+	    border-radius: 0;
+	    display: none;
+	}
+	.wrap-navbar .navbar__right input.active-phone {
+		position: absolute;
+	    background-color: #170E10;
+	    width: calc(100% + 30px);
+	    left: -15px;
+	    height: 50px;
+	    bottom: -50px;
+	    border-top: solid 1px rgba(255, 255, 255, 0.5);
+	    border-radius: 0;
+	    display: block;
+	    color: #fff;
+	    padding-left: 20px;
+	}
+
+	.sunshop-intro__utilities ul li {
+		width: 100%;
+	}
+
+	.sunshop-intro__style__element {
+	    margin-bottom: 30px;
+	}
+	.sunshop-title__menu {
+		float: left;
+	    margin-top: 25px;
+	}
+	.sunshop-title__menu ul {
+		margin: 0;
+		padding: 0;
+	}
+	.sunshop-title__menu ul li:first-child a {
+		padding-left: 0;
+	}
+
+	.sunshop-customer .owl-carousel .item {
+		padding-left: 30px;
+	    padding-right: 30px;
+	}
+	.sunshop-new img {
+		margin-bottom: 15px;
+	}
+	.navbar-brand img {
+		margin-bottom: 10px;
+	}
+
+	/*[FOOTER]*/
+	.footer__copyright p {
+		display: block;
+	    float: unset;
+	    margin: auto;
+	    text-align: center;
+	    margin-top: 10px;
+	}
+	.footer__copyright ul {
+	    margin-bottom: 0;
+	    float: unset;
+	}
+	.footer__copyright ul li {
+		float: unset;
+	}
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+	.wrap-navbar .navbar__right input.active {
+		width: 200px;
+	    padding-left: 10px;
+	    background: transparent;
+	    border-bottom: solid 1px #fff;
+	    border-radius: 0;
+	}
+}
