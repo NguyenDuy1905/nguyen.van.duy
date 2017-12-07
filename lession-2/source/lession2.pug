@@ -2,11 +2,116 @@ include modules/lession2/head/head
 include modules/lession2/navigation/navigation
 include modules/lession2/header/header
 include modules/lession2/library/library
+include modules/lession2/footer/footer
+include modules/lession2/components/product
+include modules/lession2/components/new
 
 doctype html
 html
 	+head
 	body
 		+header
+		//- [Intro]
+		section.sunshop-intro.container
+			.sunshop-intro__utilities
+				ul
+					li
+						span
+							img(src="")
+							| Trả hàng trong 30 ngày
+					li
+						span
+							img(src="")
+							| Giao hàng miễn phí
+					li
+						span
+							img(src="")
+							| Thanh toán linh hoạt
+					li
+						span
+							img(src="")
+							| Hotline: 090 4079496
+			//- end .sunshop-intro__utilities
+			.row.row-offcanvas.row-offcanvas-left
+				.button-offcanvas.container
+					button.btn.btn-primary.btn-xs.btn-offcanvas(type="button", data-toggle="offcanvas", style="width: 100%;") Danh mục sản phẩm
+				#sidebar.col-xs-6.col-md-3.sidebar-offcanvas
+					.sunshop-intro__category
+						.sunshop-intro__category__title
+							h4 Danh mục sản phẩm
+						.sunshop-intro__category__body
+							ul
+								li
+									a Bán chạy nhất
+										i.fa.fa-angle-right(aria-hidden="true")
+								li
+									a Hàng mới về
+										i.fa.fa-angle-right(aria-hidden="true")
+								li
+									a Giảm giá đến 50%
+										i.fa.fa-angle-right(aria-hidden="true")
+								li
+									a Quần áo
+										i.fa.fa-angle-right(aria-hidden="true")
+									ul.sunshop-intro__category__c2
+										li
+											a
+												i.fa.fa-circle(aria-hidden="true")
+												| Áo Thun
+										li
+											a
+												i.fa.fa-circle(aria-hidden="true")
+												| Áo Sơ Mi
+										li
+											a
+												i.fa.fa-circle(aria-hidden="true")
+												| Quần Jeans
+										li
+											a
+												i.fa.fa-circle(aria-hidden="true")
+												| Quần Shorts
+										li
+											a
+												i.fa.fa-circle(aria-hidden="true")
+												| Xem thêm
+								li
+									a Giày dép
+										i.fa.fa-angle-right(aria-hidden="true")
+									ul.sunshop-intro__category__c2
+										li
+											a
+												i.fa.fa-circle(aria-hidden="true")
+												| Giày Casual
+										li
+											a
+												i.fa.fa-circle(aria-hidden="true")
+												| Giày Da và Giày Tây
+										li
+											a
+												i.fa.fa-circle(aria-hidden="true")
+												| Sneakers
+								li
+									a Túi, balo & ví
+										i.fa.fa-angle-right(aria-hidden="true")
+								a.sunshop-intro__category__viewmore
+									i.fa.fa-plus-circle(aria-hidden="true")
+									| Xem thêm
+				.col-xs-12.col-md-9
+					.sunshop-intro__banner
+						img(src="", alt="")
+		//- [Hot]
+		section.sunshop-hot.container
+			.sunshop-title
+				h2 Sản phẩm bán chạy
+			.sunshop-hot__slider
+				.owl-carousel.owl-hot.owl-theme
+					.item
+						+product('#', 'Áo thun tay ngắn cổ tròn', '340.000', '268.000')
+					.item
+						+product('#', 'Áo thun tay ngắn cổ tròn', '340.000', '268.000')
+					.item
+						+product('#', 'Áo thun tay ngắn cổ tròn', '340.000', '268.000')
+					.item
+						+product('#', 'Áo thun tay ngắn cổ tròn', '340.000', '268.000')
+		+footer
 		+library
-
