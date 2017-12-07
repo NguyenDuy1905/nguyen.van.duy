@@ -1,0 +1,35 @@
+.clt-title {
+  position: relative;
+  padding: 4px 20px;
+  font-weight: bold;
+  &:before {
+    content: "";
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: $green;
+  }
+}
+.title-h6 {
+  position: relative;
+  padding-left: 18px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 8px;
+  &:before {
+    position: absolute;
+    font-family: "FontAwesome";
+    content: "\f04d";
+    font-size: 11px;
+    left: 0;
+    top: 2px;
+  }
+  &.first {
+    margin-top: 40px;
+  }
+  &.divider-top {
+    margin-top: 30px;
+  }
+}

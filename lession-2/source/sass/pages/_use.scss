@@ -1,0 +1,52 @@
+.use-page {
+  .none-list {
+    list-style: none;
+  }
+  .none-padding {
+    padding-left: 0;
+  }
+  .bold-text {
+    font-weight: bold;
+  }
+  .clt-list-group {
+    padding-left: 20px;
+  }
+  .os, .etc {
+    display: inline-block;
+  }
+  .block-content {
+    margin-top: 30px;
+  }
+  .etc-explain {
+    @include clearfix;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    dt {
+      float: left;
+      width: 90px;
+      position: relative;
+      padding-left: 15px;
+      font-weight: normal;
+      &:after {
+        position: absolute;
+        content: '\f111';
+        font-family: 'FontAwesome';
+        top: 7px;
+        left: 0;
+        font-size: 8px;
+      }
+    }
+    dd {
+      float: left;
+      width: calc(100% - 90px);
+    }
+  }
+  .os.none-list li{
+    @include respond-to ("small") {
+      line-height: 27px;
+    }
+    @include respond-to ("medium") {
+      line-height: 30px;
+    }
+  }
+}

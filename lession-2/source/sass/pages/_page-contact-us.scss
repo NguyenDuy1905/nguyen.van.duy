@@ -1,0 +1,26 @@
+.page-contact-us {
+  .block-action {
+    text-align:center;
+    padding:40px 0 160px;
+    @include respond-to('small') {
+      padding: 40px 0;
+    }
+  }
+  .form-control {
+    select {
+      -webkit-appearance: none;  /*Removes default chrome and safari style*/
+      -moz-appearance: none;  /*Removes default style Firefox*/
+      &::-ms-expand {
+        display: none;
+      }
+    }
+    input {
+      color: #000;
+    }
+  }
+  textarea.form-control {
+    resize: none;
+    color: #000;
+    line-height: 1.5;
+  }
+}

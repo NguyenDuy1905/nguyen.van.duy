@@ -64,6 +64,8 @@ var scss = {
     includePaths: [
       './node_modules/bootstrap-sass/assets/stylesheets',
       './node_modules/font-awesome/scss/',
+      './node_modules/slick-carousel/slick/',
+      './node_modules/owl.carousel/src/scss',
     ]
   }
 };
@@ -85,6 +87,7 @@ var js = {
   in: [
     source + 'js/*.*',
     './node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js',
+    './node_modules/slick-carousel/slick/slick.js'
   ],
   out: dest + 'js/'
 };
@@ -270,7 +273,7 @@ gulp.task('dev', function (cb) {
     ],
     cb
     )
-});
+})
 
 // ================ Build
 gulp.task('build', function (cb) {

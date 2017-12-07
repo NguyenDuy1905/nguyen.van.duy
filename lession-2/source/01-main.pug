@@ -1,0 +1,208 @@
+include modules/head/head
+include modules/footer/footer
+include modules/header/header
+include modules/heading/heading
+
+doctype html
+html
+  +head(head.home, true)
+  body
+    div.page
+      //- Header
+      +header()
+
+      //- Slider
+      .container-fluid.carousel-wrapper.main-banner
+        img(src="../images/main-banner-top.jpg", alt='main-banner')
+      section.section.section-odd.section-features
+        .container.features
+
+          +heading-title('お子様からお年寄りまで、以下のような様々なシーンで大切な人を守ります！')
+          //- List Thumbs
+          .row
+            .col-md-4.col-sm-4.col-xs-12
+              .item
+                img(src='../images/feature-1.png', alt='feature-1')
+                .layer
+                  div.description
+                    div 事故･災害時に身元
+                    div 不明にならないために
+                    button.btn.btn-md.btn-trans(type='button') 詳しく見る
+            .col-md-4.col-sm-4.col-xs-12
+              div.item
+                img(src='../images/feature-2.png', alt='feature-2')
+                .layer
+                  div.description
+                    div 毎年1万人以上が
+                    div 認知症で行方不明に
+                    button.btn.btn-md.btn-trans(type='button') 詳しく見る
+            .col-md-4.col-sm-4.col-xs-12
+              .item.last-item
+                img(src='../images/feature-3.png', alt='feature-3')
+                .layer
+                  div.description
+                    div 急な体調不良, 携帯ロックは解除
+                    div できない！？
+                    button.btn.btn-md.btn-trans(type='button') 詳しく見る
+      .container
+        section.section.section-introduce-thumbs
+          .row
+            .col-xs-12.text-center
+              img(class='introduce-logo', src='../images/01-main-introduce-logo.png')
+              h2.introduce-title.text-light-green CSSペンダントセット/CSSキーホルダーセット/CSS緊急時連絡カード
+              p あなただけの登録ID番号と通報用のフリーダイヤルがレーザー刻印されたCSSリングに、お子様でも使いやすい本皮製のCSSリングホル
+                br
+                | ダー、CSS緊急時連絡カードがセットになった「CSSキーホルダーセット」。
+                br
+                | CSSリングとコラントッテのテクノロジーを搭載した磁気が埋め込まれた医療機器のCSSペンダントヒモ、本皮製のCSSリングホルダー、
+                br
+                | CSS緊急時連絡カードがセットになった、「CSSペンダントセット」がございます。
+                br
+                | また「CSSペンダントセット」はペンダントトップを簡単な操作で付け替えていただくことで、CSSペンダントとCSSキーホルダーをシーンに
+                br
+                | 合わせて使い分けていただけます。
+                br
+                | ※医療機器ではないタイプもお選びいただけます。
+
+              .thumbs-container.text-center.container
+                div.thumb-wrapper
+                  .image-container.active
+                    img.thumb(src='images/thumb-2.png')
+                  
+                    a.view-image.image-1(data-target='')
+                      img(src='images/main-ic-2-normal.png')
+                      img(src='images/main-ic-2-active.png')
+                      p.black-text-slide CSSペンダントセット
+                  .image-container
+                    img.thumb(src='images/thumb-5.png')
+                  
+                    a.view-image.image-2
+                      img(src='images/main-ic-5-normal.png')
+                      img(src='images/main-ic-5-active.png')
+                      p.black-text-slide CSSキーホルダーセット
+                  .image-container
+                    img.thumb(src='images/thumb-1.png')
+                  
+                    a.view-image.image-3
+                      img(src='images/main-ic-1-normal.png')
+                      img(src='images/main-ic-1-active.png')
+                      p.black-text-slide CSSペンダント
+                  .image-container
+                    img.thumb(src='images/thumb-3.png')
+                    a.view-image.image-4
+                      img(src='images/main-ic-3-normal.png')
+                      img(src='images/main-ic-3-active.png')
+                      p.black-text-slide CSSキーホルダー
+                  .image-container
+                    img.thumb(src='images/thumb-4.png')
+                    
+                    a.view-image.image-5
+                      img(src='images/main-ic-4-normal.png')
+                      img(src='images/main-ic-4-active.png')
+                      p.black-text-slide CSS緊急時連絡カード
+              div.block-action.text-center
+                button.btn.btn-green.btn-fixed-300  お申込み＆商品仕様
+
+      section.section.section-odd.section-step-by-step
+        .container
+          +heading-title('サービス')
+          .step-by-step
+            div.group-circle-action
+              div.circle-wrapper
+                div.circle-top-1.circle-top.text-center.bg-white.none-desc
+                  img(src='images/main-step-1.png')
+                i.fa.fa-long-arrow-right.yellow-arrow
+              div.circle-wrapper
+                div.circle-top-2.circle-top.text-center.bg-white.none-desc
+                  img(src='images/main-step-2.png')
+                i.fa.fa-long-arrow-right.blue-arrow
+              div.circle-wrapper
+                div.circle-top-3.circle-top.text-center.bg-white.none-desc
+                  img(src='images/main-step-3.png')
+          p CSSは製品ご購入時にまさかの際の連絡先を最大5つまで登録することが可能です。
+            br
+            |CSSにはコールセンターのフリーダイヤル番号が刻印されてるため、発見者からの連絡
+            |を受けてコールセンターがご家族などに連絡を取らせて頂きます。
+          div.block-caculator
+            span.number 24
+            span.unit 時間
+            img.operator(src='images/x.png')
+            span.number 365
+            span.unit 日
+            img.operator(src='images/x.png')
+            span.number 全国対応
+          div.block-action
+            button.btn.btn-green.btn-fixed-300 サービス詳細説明
+
+      section.section.section-block-rippon
+        .container.text-center
+          +heading-title('個人賠償保険等')
+          p 身元照会サービスに保険を付帯（月額700円）することもできます。
+          .ribbon.col-md-12
+            .ribbon-wrapper-green
+              .ribbon-green 個人賠償保険等
+            div.block-caculator
+              div.col-md-6.ribbon-col.col-xs-12
+                span.des-text.text-right
+                  |交通事故傷害保険
+                  br
+                  |(死亡・後遺障害のみ)
+                span.number 100万円
+              div.col-md-1
+                img(src='images/plus.png')
+              div.col-md-5.ribbon-col.col-xs-12
+                span.des-text  個人賠償責任保険
+                span.number 3億円
+            div.more-info
+              |※日常生活において他人にケガをさせたり、他人の物を壊したりして法律上の損害
+              |賠償責任を負わされた場合の損害賠償額を補償。
+          div.block-action
+            button.btn.btn-green.btn-fixed-300 保険詳細
+
+      section.section.section-odd.section-qa
+        .container
+          +heading-title('よくあるお問合せ')
+          .row
+            .col-md-6
+              .row-qa.uncollapsible
+                .question
+                  span.icon-round Q
+                  p 緊急連絡先が外部の人に漏れることはないのですか。
+                .answer.left-block
+                  .content.not-collapse
+                    span.icon-round A
+                    p CSS管理センターのオペレーターは、登録されている緊急連絡先に連絡をするのみで、通報者に個人情報を提供することはありません。
+              .row-qa.uncollapsible
+                .question
+                  span.icon-round Q
+                  p 緊急連絡先に登録できるのは、個人のみですか。
+                .answer.left-block
+                  .content.not-collapse
+                    span.icon-round A
+                    p ご家族、ご親戚、ご友人、ご勤務先や主治医等もご登録可能です。 ※ご登録いただいた方へは必ず登録されている旨をお伝えください。
+            .col-md-6
+              .row-qa.uncollapsible
+                .question.long-text
+                  span.icon-round Q
+                  p GPSはついていますか。
+                .answer
+                  .content.not-collapse
+                    span.icon-round A
+                    p GPS機能は現在ついておりません。CSSペンダントにはCSS管理センターのフリーダイヤルと、登録ID番号が刻印されています。
+              .row-qa.uncollapsible
+                .question
+                  span.icon-round Q
+                  p 緊急連絡先として登録する項目を教えてください。
+                .answer.last-block
+                  .content.not-collapse
+                    span.icon-round A
+                    p 緊急連絡先となる方のお名前、続柄、電話番号のみです。
+          div.block-action
+            button.btn.btn-green.btn-fixed-300 よくあるご質問
+      section.block.block-banner-footer
+        .container
+          h2 CSSに関するご相談は下記よりお気軽にどうぞ
+          button.btn.btn-white.btn-fixed-300 お問い合わせ
+
+      //- Footer
+      +footer()

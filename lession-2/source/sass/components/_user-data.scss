@@ -1,0 +1,211 @@
+.user-data {
+  margin-bottom: 30px;
+  @include respond-to('medium') {
+    margin-bottom: 40px;
+  }
+  .data-wrapper {
+    border: 1px solid $input-border;
+    @include respond-to('medium') {
+      @include flexbox();
+    }
+    &:not(:first-child) {
+      border-top: none;
+    }
+    .form-control {
+      border: none;
+    }
+    .form-group {
+      border-radius: 2px;
+      &.has-error {
+        border: 1px solid $state-danger-text;
+      }
+    }
+  }
+  .data-title {
+    @include flexbox();
+    background-color: $well-bg;
+    justify-content: flex-end;
+    align-items: center;
+    @include respond-to("small") {
+      padding: 7px 0 5px;
+      justify-content: center;
+      text-align: left;
+      font-weight: bold;
+    }
+    @include respond-to("medium") {
+      padding: 20px;
+      text-align: right;
+      font-weight: normal;
+    }
+    .row {
+      width: 100%;
+      div {
+        @include respond-to('small') {
+          display: inline-block;
+        }
+        @include respond-to('medium') {
+          display: block;
+          padding-left: 10px;
+          padding-top: 10px;
+        }
+      }
+    }
+    .span-required {
+      color: $white;
+      background-color: $yellow;
+      @include border-radius(20px);
+      line-height: normal;
+      padding: 5px 13px;
+      font-size: 12px;
+      font-weight: normal;
+    }
+  }
+  .data-content {
+    background-color: $table-bg-accent;
+    .btn-action {
+      padding-left: 0;
+    }
+    .btn {
+      &.inline-button {
+        @include respond-to('medium') {
+          margin-left: 10px;
+          margin-top: 0;
+          padding: 11px 30px;
+        }
+        @include respond-to('large') {
+          padding: 11px 40px;
+        }
+      }
+    }
+    i.fa-info-circle {
+      color: $blue;
+      font-size: 25px;
+      padding-top: 5px;
+      margin-right: 10px;
+    }
+    p.has-icon {
+      @include flexbox();
+    }
+  }
+  &.multi-col {
+    .data-action {
+      display: block;
+      align-items: center;
+      @include respond-to('medium') {
+        @include flexbox();
+      }
+      .btn {
+
+        margin: 10px 0;
+        letter-spacing: -2px;
+        @include respond-to('medium') {
+
+          width: 100%;
+          margin: 0;
+        }
+        &.btn-long {
+            padding: 10px;
+        }
+      }
+      .data-content {
+        border-right: none;
+        @include respond-to('medium') {
+          border-right: 1px solid $input-border;
+        }
+      }
+      .btn-perchaser {
+        text-align: center;
+      }
+    }
+  }
+}
+.confirm-form {
+  margin-bottom: 10px;
+
+}
+.confirm-form.black-color {
+  .data-wrapper {
+    background:$black-collapse;
+    .data-title {
+      background: $black-collapse;
+    }
+    .data-content {
+      background-color: #a1a0a0;
+    }
+  }
+  .user-order {
+    background: #909090;
+  }
+
+}
+.confirm-form.yellow-color {
+  .data-wrapper {
+    background: $yellow-collapse;
+    .data-title {
+      background: $yellow-collapse;
+    }
+    .data-content {
+      background-color: #fff9b9;
+    }
+  }
+  .user-order {
+    background: #fcf496;
+  }
+}
+.confirm-form.green-color {
+  .data-wrapper {
+    background: $green-collapse;
+    .data-title {
+      background: $green-collapse;
+    }
+    .data-content {
+      background-color: #caf9ba;
+    }
+  }
+  .user-order {
+    background: #b7efa4;
+  }
+}
+.confirm-form.red-color {
+  .data-wrapper {
+    background: $red-collapse;
+    .data-title {
+      background: $red-collapse;
+    }
+    .data-content {
+      background-color: #ffcccc;
+    }
+  }
+  .user-order {
+    background: #ffb0b2;
+  }
+}
+.confirm-form.blue-color {
+  .data-wrapper {
+    background: $blue-collapse;
+    .data-title {
+      background: $blue-collapse;
+    }
+    .data-content {
+      background-color: #c2d6fc;
+    }
+  }
+  .user-order {
+    background: #aec8f9;
+  }
+}
+.confirm-form {
+  .user-data {
+    margin-bottom: 10px;
+    .data-wrapper {
+      &:first-child {
+        border-top: none;
+      }
+    }
+  }
+  .data-wrapper {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-left-width: 0;
+    border-right-width: 0;
+  }
+}

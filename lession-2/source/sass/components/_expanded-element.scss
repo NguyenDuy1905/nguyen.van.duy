@@ -1,0 +1,228 @@
+.faq-wrapper {
+  padding: 10px;
+  border: 1px solid $border-gray;
+  background: #f9f9f9;
+  @include respond-to('medium') {
+    padding: 20px 30px 30px 30px;
+  }
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .clt-title {
+    padding: 0 20px;
+    margin-bottom: 25px;
+  }
+  .warning-text {
+    color: $red;
+  }
+  .answer {
+    .content {
+      @include respond-to('medium') {
+        margin: 0 0 20px 0;
+      }
+    }
+  }
+}
+.row-qa {
+  background-color: #f5f5f5;
+  a {
+    display: block;
+    color: $black;
+    text-decoration: none;
+  }
+  p {
+    @include respond-to('small') {
+      margin: 15px 0 15px 70px;
+    }
+    @include respond-to('medium') {
+      margin: 15px 0 0 70px;
+    }
+    @include respond-to('large') {
+      margin: 20px 0 0 95px;
+      &.long-text {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .icon-round {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 24px;
+    color: $white;
+    text-align: center;
+    font-weight: 700;
+    display: block;
+    float: left;
+    @include border-radius(50%);
+    @include respond-to('small') {
+      width: 47px;
+      height: 47px;
+      line-height: 47px;
+    }
+    @include respond-to('large') {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+    }
+  }
+  .question {
+    @include border-radius(40px 0 0 40px);
+    position: relative;
+    font-weight: 700;
+    background-color: $white;
+    @include clearfix;
+    @include respond-to('small') {
+      @include border-radius(40px 0 0 0);
+    }
+    @include respond-to('medium') {
+      @include border-radius(40px 0 0 40px);
+      &.long-text {
+        @include border-radius(0);
+        p {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .icon-round {
+      top: 0;
+      background-color: $blue;
+    }
+  }
+  .answer {
+    background-color: #f5f5f5;
+    .content {
+      position: relative;
+      @include clearfix;
+      @include respond-to('small') {
+        padding: 0 0px 0 75px;
+      }
+      @include respond-to('large') {
+        padding: 20px 60px 60px 0;
+      }
+      a {
+        color: $blue;
+        text-decoration: underline;
+        display: inline-block;
+      }
+    }
+    .icon-round {
+      float: left;
+      display: block;
+      top: 20px;
+      background-color: $yellow;
+      @include respond-to('small') {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+
+      }
+      @include respond-to('medium') {
+        position: static;
+        transform: none;
+      }
+    }
+  }
+  &.uncollapsible {
+    margin: 10px 0;
+    border: 1px solid #e8e8e8;
+    @include border-radius(40px 0 0 0);
+    .question {
+      border-bottom: 1px solid #e8e8e8;
+      line-height: initial;
+      padding: 0 20px 0px 0;
+      p {
+        @include respond-to('large') {
+          margin-left: 80px;
+        }
+      }
+    }
+    .answer {
+      .content {
+        background: $lightest-grey;
+        padding: 20px 10px 20px 0;
+        p {
+          font-size: 12px;
+          @include respond-to('small') {
+            margin: 0 0 0 70px;
+          }
+          @include respond-to('medium') {
+            margin: 10px 0 0 70px;
+          }
+          @include respond-to('large') {
+            margin: 0 0 0 75px;
+          }
+        }
+      }
+    }
+  }
+  &.collapsible {
+    @include border-radius(40px 0 0 40px);
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+    .question {
+      a {
+        position: relative;
+        @include box-shadow(-2px 4px 23px 10px rgba(0, 0, 0, 0.04));
+        border: 0;
+        @include respond-to('small') {
+          @include border-radius(40px 0 0 0);
+        }
+        @include respond-to('medium') {
+          @include border-radius(40px 0 0 40px);
+        }
+        p {
+
+          @include respond-to('small') {
+            padding: 10px 30px 10px 0;
+            margin: 0 0 0 70px;
+          }
+          @include respond-to('large') {
+            padding: 15px 0;
+            margin: 0 0 0 95px;
+          }
+        }
+        &.collapsed {
+          border: 1px solid #e8e8e8;
+          &:after {
+            content: "\f0d7";
+            color: $light-gray;
+          }
+          @include box-shadow(none);
+        }
+        &:after {
+          position: absolute;
+          font-family: "FontAwesome";
+          content: "\f0d8";
+          right: 20px;
+          top: 25px;
+          transform: translateY(-50%);
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          font-size: 20px;
+          cursor: pointer;
+          color: $green;
+        }
+        &:hover{
+          background: $lightest-grey;
+          &:after {
+            color: $green;
+          }
+        }
+      }
+    }
+    .answer {
+      border: 1px solid #f5f5f5;
+      .content {
+        padding: 0 10px 0 0;
+      }
+    }
+  }
+}

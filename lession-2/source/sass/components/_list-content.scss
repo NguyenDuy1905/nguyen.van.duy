@@ -1,0 +1,14 @@
+.list-content {
+  p {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+  li {
+    &:not(:last-child) {
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

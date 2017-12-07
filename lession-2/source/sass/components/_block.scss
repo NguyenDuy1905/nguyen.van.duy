@@ -1,0 +1,87 @@
+.block-caculator {
+  $block-caculator-font-size: 48px;
+  @include flexbox();
+  line-height: 48px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  img {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 20px;
+  }
+  .number {
+    font-size: $block-caculator-font-size;
+    font-weight: 700;
+    color: $brand-primary;
+    @include respond-to('small') {
+      font-size: 27px;
+    }
+    @include respond-to('medium') {
+      font-size: inherit;
+    }
+  }
+  .unit {
+    color: $brand-primary;
+    line-height: 1;
+    margin-top: auto;
+    padding: 6px 0;
+  }
+  @include respond-to('small') {
+    .number {
+      font-size: 24px;
+    }
+    .unit {
+      color: $brand-primary;
+      padding: 15px 0;
+      font-size: 10px;
+    }
+    .operator {
+      width: 10px;
+      height: 10px;
+      margin: 0 7px;
+    }
+    .des-text, .more-info {
+      font-size: 12px;
+    }
+  }
+  @include respond-to('medium') {
+    .number {
+      font-size: 48px;
+    }
+    .unit {
+      color: $brand-primary;
+      padding: 6px 0;
+      font-size: inherit;
+    }
+    .operator {
+      width: 16px;
+      height: 16px;
+      margin: 0 20px;
+    }
+    .des-text, .more-info {
+      font-size: inherit;
+    }
+  }
+}
+
+.block {
+  padding-top: 17px;
+  padding-bottom: 30px;
+  &-banner-footer {
+    background: url('../images/01-Main-bg-title-footer.jpg');
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    color: white;
+    padding: 57px 0;
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0 0 40px;
+      line-height: 40px;
+    }
+  }
+}

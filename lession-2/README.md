@@ -1,5 +1,4 @@
-# nguyen.van.duy
-Lession 2
+# colantotte-front
 
 ## Install
 

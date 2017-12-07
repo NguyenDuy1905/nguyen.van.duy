@@ -1,0 +1,112 @@
+.ribbon {
+  margin: 50px auto;
+  background: #f5f5f5;
+  position: relative;
+  z-index: 90;
+  border: 1px solid #e8e8e8;
+  font-size: 13px;
+  .more-info {
+    clear: both;
+  }
+  .ribbon-wrapper-green {
+    width: 111px;
+    height: 96px;
+    overflow: hidden;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+  }
+  .ribbon-green {
+    font-size: $font-size-small;
+    color: #fff;
+    text-align: center;
+    -webkit-transform: rotate(-42deg);
+    -moz-transform:    rotate(-42deg);
+    -ms-transform:     rotate(-42deg);
+    -o-transform:      rotate(-42deg);
+    position: relative;
+    padding: 7px 0;
+    left: -34px;
+    top: 14px;
+    width: 149px;
+    background-color: #f0aa0a;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#BFDC7A), to(#8EBF45));
+    background-image: -webkit-linear-gradient(top, #BFDC7A, #8EBF45);
+    background-image:    -moz-linear-gradient(top, #BFDC7A, #8EBF45);
+    background-image:     -ms-linear-gradient(top, #BFDC7A, #8EBF45);
+    background-image:      -o-linear-gradient(top, #BFDC7A, #8EBF45);
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+  }
+  .ribbon-green:before,
+  .ribbon-green:after {
+    content: "";
+    border-top: 5px solid #c78b01;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    position: absolute;
+    bottom: -5px;
+  }
+  .ribbon-green:before {
+    right: 0;
+  }
+  .ribbon-green:after  {
+    left: 0;
+  }
+  .des-text {
+    max-width: 150px;
+    display: inline-block;
+    line-height: 22px;
+    text-align: right;
+  }
+  @include respond-to('small') {
+    padding: 64px 0 56px;
+    .block-caculator {
+      display: block;
+      text-align: center;
+    }
+    .ribbon-col {
+      @include flexbox();
+      vertical-align: middle;
+      align-items: center;
+      justify-content: center;
+
+    }
+    .operator {
+      line-height: 0;
+    }
+    .number {
+      text-align: left;
+      padding-left: 20px;
+    }
+  }
+  @include respond-to('medium') {
+    .ribbon-col {
+      &:last-child {
+        margin-bottom: 10px;
+      }
+    }
+    .number {
+      width: auto;
+    }
+  }
+  @include respond-to('large') {
+    padding: 32px 35px 32px 115px;
+    .number {
+      min-width: 180px;
+      text-align: left;
+      padding-left: 0px;
+    }
+    .block-caculator {
+      @include flexbox();
+      flex-grow: 3;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+    .ribbon-col {
+      @include flexbox();
+      align-items: center;
+      width: auto;
+    }
+  }
+}
+

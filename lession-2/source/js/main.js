@@ -1,2 +1,13 @@
 //=require jquery/dist/jquery.min.js
 //=require bootstrap-sass/assets/javascripts/bootstrap.js
+//=require jquery.elevatezoom.js
+//=require zoom.js
+//=require side-bar.js
+//=require dropdown.js
+//=require scroll-top.js
+//=require thumb.js
+//=require tooltip-nav.js
+//=require owl.carousel/dist/owl.carousel.js
+//=require slick-carousel/slick/slick.js
+//=require main-slick.js
+//=require sorry.js

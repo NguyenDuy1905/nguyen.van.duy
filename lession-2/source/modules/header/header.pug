@@ -1,0 +1,119 @@
+mixin header(page)
+  .header
+    .topbar-header
+      .container
+        .contact-head
+          p お問合せ窓口(24時間)
+          p.number
+            i.fa.fa-phone
+            span.hidden-xs.hidden-sm 0120-13-0001
+            a(href="tel:0120-13-0001").hidden-lg.hidden-md 0120-13-0001
+        ul.menu-company.hidden-sm.hidden-xs
+          // 25-11-version
+            li
+            a(href='#') お申込み
+          li
+            a(href='#') ショッピングガイド
+          li |
+          li
+            a(href='#') お問い合わせ
+    .container.header-global
+      //- Header
+      .row
+        h1.col-md-2.col-xs-5.logo
+          a.logo-img(href='#')
+            img(src='../images/logo.png', alt='ＣＳＳコラントッテ')
+          .btn-menubar
+            .bar1
+            .bar2
+            .bar3
+            span.open メニュー
+            span.close 閉じる
+        .col-md-6.hidden-sm.hidden-xs
+          .wrapper-menu
+            ul.menu-main
+              if page == 'concept'
+                li.active
+                  a(href='#') CSSとは
+              else
+                li
+                  a(href='#') CSSとは
+              if page == 'sale'
+                li.active
+                  a(href='#') お申込み
+              else
+                li
+                  a(href='#') お申込み
+              if page == 'service'
+                li.active
+                  a(href='#') サービス概要
+              else
+                li
+                  a(href='#') サービス概要
+              if page == 'insuranceDetail'
+                li.active
+                  a(href='#') 保険詳細
+              else
+                li
+                  a(href='#') 保険詳細
+              if page == 'faq'
+                li.active
+                  a(href='#') よくあるご質問
+              else
+                li
+                  a(href='#') よくあるご質問
+        .col-md-4.col-xs-7.user-info
+          ul.menu-user.hidden-sm.hidden-xs
+            li.link-my-page
+              a(href='#')
+                i.fa.fa-user(aria-hidden="true")
+                | マイページ
+            li
+              a(href='#') お申込み
+            li.link-purchase
+              a(href='#')
+                i.fa.fa-shopping-bag(aria-hidden='true')
+                span.purchase-number 0
+          ul.mobile-user.visible-xs.visible-sm
+            li
+              a(href="#")
+                i.fa.fa-user(aria-hidden="true")
+                span マイページ
+            li.link-purchase.active
+              a(href='#')
+                i.fa.fa-shopping-bag(aria-hidden='true')
+                span.purchase-number 0
+                span カート
+      //- Dropdown Mobile Menu
+  .dd-menu
+    ul
+      li.active
+        a(href='#')
+          | コンセプト
+      li
+        a(href='#')
+          | 商品
+      li
+        a(href='#')
+          | サービス
+      li
+        a(href='#')
+          | 保険詳細
+      li
+        a(href='#')
+          | よくあるご質問
+      li
+        a(href='#')
+          | お問い合わせ
+      li
+        a(href='#')
+          | ショッピングガイド
+mixin header_2(page)
+  .header
+    .container.header-sorry
+      //- Header
+      .row
+        h1.col-md-2.col-xs-5.logo
+          a.logo-img(href='#')
+            img(src='../images/logo.png', alt='ＣＳＳコラントッテ')
+        

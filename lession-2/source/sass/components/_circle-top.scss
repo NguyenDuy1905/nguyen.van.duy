@@ -1,0 +1,125 @@
+.group-circle-action {
+  justify-content: center;
+  @include respond-to('small') {
+    display: block;
+  }
+  @include respond-to('large') {
+    @include flexbox();
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    flex-grow: 3;
+  }
+  .circle-wrapper {
+    border-radius: 50%;
+    border: 1px solid $input-border;
+    background-color:  $white;
+    width: 180px;
+    height: 180px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    @include respond-to('small') {
+      margin: 0 auto 0;
+      &:not(:last-child) {
+        display: block;
+        margin: 0 auto 70px;
+      }
+    }
+    @include respond-to('large') {
+      @include flexbox();
+      margin: 0;
+      &:not(:last-child) {
+        margin: 0 65px 0 0;
+      }
+    }
+    .fa {
+      position: absolute;
+      font-size: 40px;
+      color: $green;
+      @include respond-to('small') {
+        bottom: -55px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+      }
+      @include respond-to('large') {
+        top: 50%;
+        right: -60px;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        left: auto;
+        bottom: auto;
+      }
+      &.yellow-arrow {
+        color: $yellow;
+      }
+      &.blue-arrow {
+        color: $blue;
+      }
+    }
+  }
+  .dsc {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 20px;
+  }
+  .circle-top {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    &.circle-top-2 {
+      img {
+        margin-top: 20px;
+      }
+    }
+    &.circle-top-1 {
+      img {
+        margin-top: 30px;
+        margin-bottom: 15px;
+      }
+    }
+    &.circle-top-3 {
+      img {
+        margin-top: 30px;
+        margin-bottom: 25px;
+      }
+    }
+    &.none-desc {
+      img {
+        margin: 0;
+      }
+    }
+    img {
+      border: none;
+    }
+    border-radius: 50%;
+    background-color:  $green;
+    width: 172px;
+    height: 172px;
+    color: $white;
+    &.bg-white {
+      background: none;
+    }
+    p {
+      padding: 10px;
+      font-size: 10px;
+    }
+  }
+}

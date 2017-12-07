@@ -1,0 +1,34 @@
+.tokusho-page {
+  .heading {
+    margin-top: 0;
+  }
+  .bold-text {
+    font-weight: bold;
+  }
+  .address-text {
+    text-decoration: underline;
+  }
+  .left {
+    padding: 10px;
+    @include respond-to ('medium') {
+      padding: 20px;
+    }
+    .control-label {
+      padding: 0;
+    }
+  }
+  .right {
+    padding: 10px;
+    @include respond-to ('medium') {
+      padding: 20px 20px 20px 35px;
+    }
+  }
+  .clt-list-group {
+    padding-left: 20px;
+  }
+  .form-horizontal {
+    .form-group {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.clt-list-group {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style-type: none;
+    position: relative;
+    padding-left: 15px;
+    font-size: 13px;
+    @include respond-to('medium') {
+      padding-left: 20px;
+      font-size: $font-size-base;
+    }
+    &:before {
+      position: absolute;
+      content: '\f111';
+      font-family: 'FontAwesome';
+      top: 7px;
+      left: 0;
+      font-size: 8px;
+    }
+  }
+  &.privacy {
+    padding-left: 20px;
+  }
+}
+.list-unstyled-padding {
+  list-style: none;
+}

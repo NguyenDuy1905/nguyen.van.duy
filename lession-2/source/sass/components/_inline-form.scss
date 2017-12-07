@@ -1,0 +1,56 @@
+.inline-form-group {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  @include respond-to('small') {
+    display: block;
+    text-align: center;
+    .form-group {
+      width: 43%;
+      display: inline-block;
+      .form-control {
+        width: 100%;
+      }
+      &.one-line {
+        width: 100%;
+      }
+    }
+    .btn {
+      margin-top: 10px;
+      width: auto;
+      padding: 6px 30px;
+    }
+    .text-divider, .span-unit {
+      width: calc(10% - 9px);
+      text-align: center;
+      margin: 0;
+      display: inline-block;
+      padding: 0;
+      &:not(:last-child) {
+        padding: 0;
+      }
+    }
+  }
+  @include respond-to('medium') {
+    @include flexbox();
+    .form-group {
+      display: block;
+    }
+    .btn {
+      width: 190px;
+      margin-top: 0;
+      padding: 11px 40px;
+    }
+    .text-divider {
+      margin: 0 10px;
+      width: auto;
+    }
+  }
+  .form-group {
+    border-bottom-width: 1px;
+  }
+  .btn-colla {
+    max-width: 120px;
+    margin-left: 10px;
+  }
+}

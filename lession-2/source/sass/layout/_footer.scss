@@ -1,135 +1,185 @@
-.l-footer {
-  background: $lighten-grey;
-  font-size: 13px;
-  color: $dark-gray;
-  padding-top: 45px;
-  &__border {
-    width: 100%;
-    height: 0;
-    border-bottom: 1px solid $border-gray;
-    margin: 50px 0 15px; 
-  }
-  &__heading {
-    color: $black;
-    font-weight: 900;
-    margin-bottom: 40px;
-    &-icon {
-      color: $gold;
-      font-size: 10px;
-      line-height: 16px;
-      margin-right: 10px;
-    }
-  }
-}
-.about {
-  &__description {
-    
-  }
-  &__contact {
-    padding-left: 26px;
-    margin-bottom: 14px;
+.footer-global {
+  padding: 0px;
+  background-color: $panel-footer-bg;
+  .btn-arrow {
     position: relative;
-  }
-  &__icon {
-    position: absolute;
-    top: 8px;
-    left: 0;
-    color: $lighter-black;
-  }
-}
-.sublist {
-  &__item {
-    color: $dark-gray;
-    font-size: 13px;
-    &:hover {
-      color: $gold;
+    display: inline-block;
+    font-size: 0px;
+    display: inline-block;
+    @include respond-to ("small") {
+      margin-bottom: 30px;
     }
-  }
-  &--last {
-    .sublist__item {
-      padding-left: 20px;
-      position: relative;
+    @include respond-to ("medium") {
+      margin-bottom: 0px;
     }
-    .sublist__icon {
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-  }
-}
-.payment {
-  margin-bottom: 40px;
-  &__heading {
-    font-size: 13px;
-    font-weight: 600;
-    color: $dark-gray;
-    margin-bottom: 20px;
-  }
-  &__wrap {
-    display: block;
-    width: 114px;
-    height: 46px;
-    margin: 0 10px 10px 0;
-    border: 2px solid $lighter-blue;
-  }
-  &__img {
-    width: 100%;
-    height: 100%;
-  }
-}
-.contact {
-  margin-bottom: 40px;
-  &__heading {
-    font-size: 13px;
-    font-weight: 600;
-    color: $dark-gray;
-    margin-bottom: 20px;
-  }
-  &__icon {
+    @include border-radius(50%);
     width: 60px;
     height: 60px;
-    border-radius: 100%;
-    border: 2px solid $gold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    color: $gold;
-    margin-right: 8px;
-  }
-  &__title {
-    font-size: 13px;
-    margin-bottom: 0;
-  }
-  &__number {
-    font-size: 18px;
-    line-height: 20px;
-    font-weight: bold;
-    color: $scalet;
-  }
-}
-.end-page {
-  background: $lighter-black;
-  &__nav {
-    margin-right: -10px;
-  }
-  &__item {
-    display: block;
-    font-size: 13px;
-    line-height: 60px;
-    padding: 0 10px;
-    color: $light-gray;
+    position: relative;
+    text-align: center;
+    background: url('../images/btn-backtop.png') no-repeat;
     &:hover {
-      color: $white;
+      background: url('../images/btt-hover.png') no-repeat;
+      transition: all 0.3s;
+      transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+
     }
   }
-}
-.copyright {
-  font-size: 13px;
-  line-height: 60px;
-  margin-bottom: 0;
-  color: $light-gray;
-  &__hightlight {
-    color: $white;
+  ul.foo-route {
+    list-style: none;
+    &.after-login {
+      >li {
+        &:nth-child(2) {
+          a {
+            span:after {
+              background: url('../images/ico-foo-help.png') no-repeat center center;
+            }
+          }
+        }
+      }
+    }
+    @include respond-to("medium") {
+      margin: 40px 0;
+    }
+    padding: 0;
+    text-align: center;
+    >li {
+      @include respond-to("small") {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
+      @include respond-to("medium") {
+        width: 300px;
+        display: inline-block;
+        &:not(:last-child) {
+          margin-right: 60px;
+        }
+      }
+      a {
+        display: block;
+        color: $green;
+        font-size: 14px;
+        height: 60px;
+        line-height: 60px;
+        text-decoration: none;
+        background: #fff;
+        border: 2px solid $green;
+        padding: 0 10px;
+        border-radius: 34px;
+        &:hover {
+          background: #f7f7f7;
+        }
+        span {
+          position: relative;
+          padding-left: 35px;
+          &:after {
+            content: "";
+            position: absolute;
+          }
+        }
+      }
+      &:nth-child(1) {
+        a {
+          span:after {
+            display: block;
+            width: 26px;
+            height: 18px;
+            background: url('../images/foo-mail-ico.png') no-repeat center center;
+            top: 50%;
+            left: 0px;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+          }
+        }
+      }
+      &:nth-child(2) {
+        a {
+          span:after {
+            display: block;
+            width: 26px;
+            height: 24px;
+            background: url('../images/foo-cart-ico.png') no-repeat center center;
+            top: 50%;
+            left: 0px;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
+  }
+  ul.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline-block;
+      position: relative;
+      width: auto;
+      line-height: 40px;
+      a {
+        display: block;
+        color: $black;
+        text-decoration: none;
+        @include transition(font-weight .25s);
+        &:hover {
+          font-weight: 700;
+        }
+      }
+      &:not(:last-child) {
+        &:before {
+          position: absolute;
+          right: -13px;
+        }
+      }
+    }
+    @include respond-to('small') {
+      padding-top: 0;
+      li {
+        width: 100%;
+        &:not(:first-child) {
+          margin-left: 0;
+        }
+      }
+    }
+    @include respond-to('medium') {
+      padding-top: 20px;
+      li {
+        width: auto;
+        &:not(:first-child) {
+          margin-left: 24px;
+        }
+        &:not(:last-child) {
+          &:before {
+            content: '|';
+          }
+        }
+      }
+    }
+
+  }
+  .bottom {
+    padding-bottom: 3.5rem;
+    p {
+      margin-bottom: .5rem;
+      line-height: 20px;
+    }
+    @include respond-to('small') {
+      padding-top: 4rem;
+    }
+    @include respond-to('medium') {
+      padding-top: 8rem;
+    }
   }
 }
