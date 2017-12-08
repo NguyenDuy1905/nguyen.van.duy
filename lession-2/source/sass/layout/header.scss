@@ -1,0 +1,116 @@
+.sunshop-header {
+  background-color: #f3f3f3;
+  display: block;
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline-block;
+      a {
+        text-transform: uppercase;
+        color: #111111;
+        line-height: 30px;
+        margin-right: 23px;
+        font-size: 12px;
+        /*font-family: 'Roboto-Bold';*/
+        font-weight: 700;
+        transition: 0.3s;
+        &:hover {
+          color: #01C3C3;
+        }
+      }
+      &:last-child {
+        a {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .wrap-navbar {
+    background-color: #170e10;
+    nav {
+      padding: 7px 0 9px 0;
+      .navbar__right {
+        display: flex;
+        align-items: center;
+        .sunshop-cart {
+          align-items: center;
+        }
+        .sunshop-form form {
+          margin-right: 48px;
+          height: 36px;
+          input {
+            border-radius: 4px 0 0 4px;
+            font-size: 12px;
+            height: 100%;
+            width: 350px;
+            border: none;
+            transition: 0.3s;
+            padding-left: 15px;
+            padding-right: 15px;
+            &:focus {
+              border: solid 1px #01C3C3;
+            }
+          }
+          button {
+            background-color: #01C3C3;
+            color: #fff;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            margin-left: -1px;
+            :focus {
+              box-shadow: 0 0 0 3px rgba(1, 195, 195, 0.5);
+            }
+          }
+        }
+        .sunshop-cart {
+          color: #fff;
+          transition: 0.3s;
+          &:hover {
+            cursor: pointer;
+            p {
+              color: #01C3C3;
+            }
+          }
+          img {
+            margin-right: 12px;
+            margin-top: -5px;
+          }
+          p {
+            transition: 0.3s;
+          }
+        }
+        .menu-reponsive {
+          display: none;
+        }
+      }
+    }
+  }
+  .sunshop-menu__wrap {
+    .sunshop-menu {
+      ul {
+        li {
+          a {
+            font-size: 14px;
+            color: #484949;
+            /*font-family: 'Roboto-Regular';*/
+            font-weight: 400;
+            margin-left: 16px;
+            margin-right: 16px;
+            line-height: 40px;
+            transition: 0.3s;
+            &:hover {
+              color: #01C3C3;
+            }
+          }
+          &:first-child a {
+            margin-left: 0;
+          }
+          &:last-child a {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
