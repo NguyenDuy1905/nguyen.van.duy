@@ -1,66 +1,96 @@
-mixin footer_2(isNotShow)
-  //Footer
-  footer.footer-global
-    .container.text-center
-      .bottom.bottom-sorry
-        .col-md-12
-          p
-            small Copyright © Colan Totte Co.,Ltd. All Rigths Reserved
-          p
-            small 本サイト上に記載・掲載・明記されている内容すべての無断転記・転用を禁じます。
-
-    //./Footer
-    script(type='text/javascript', src='js/main.js')
-    
-mixin footer(isNotShow)
-  //Footer
-  footer.footer-global
-    .container.text-center
-      if !isNotShow
-        div
-          a.btn-arrow(href='#') backtotop
-      ul.foo-route
-        li
-          a(href="#")
-            span お問合せはこちら
-        li
-          a(href="#")
-            span お申込みはこちら
-      ul.foo-route.after-login
-        li
-          a(href="#")
-            span お問合せはこちら
-        li
-          a(href="#")
-            span 保険についてのお問い合わせはこちら
-      div
-        ul.menu
-          li
-            a(href='#') サイトご利用にあたって
-          li
-            a(href='#') 特定商取引に基づく表記
-          li
-            a(href='#') 会社概要
-          li
-            a(href='#') プライバシーポリシー
-          li
-            a(href='#') 利用規約
-      .bottom
-        .col-md-12
-          p
-            small Copyright © Colan Totte Co.,Ltd. All Rigths Reserved
-          p
-            small 本サイト上に記載・掲載・明記されている内容すべての無断転記・転用を禁じます。
-
-  .tooltip-nav.js-tooltip-nav.is-show
+mixin footer
+  footer
     .container
-      .tooltip-text
-        p 製品を使用される方の、情報を入力します。使用者を選んで入力を開始してください。
-        .tooltip-close
-          i.fa.fa-times-circle(aria-hidden='true')
-  //./Footer
-  script(type='text/javascript', src='js/main.js')
-  
-
-  
-  
+      .sunshop-footer__content
+        .row
+          .col-lg-4
+            .sunshop-footer__title
+              a(href="#")
+                img(src="../../images/logo.png", alt="")
+            ul.sunshop-footer__body
+                li
+                    img.sunshop-footer__title__icon(src="../../images/facebook-placeholder-for-locate-places-on-maps.svg", alt="")
+                    | Tầng 4, Tòa nhà Hanoi Group  Số 442 Đội Cấn, P. Cống Vị, Q. Ba Đình, Hà Nội
+                li
+                    span
+                        img(src="../../images/old-handphone.svg", alt="")
+                        | (04) 6674 2332
+                    span &nbsp;-&nbsp;
+                        img(src="../../images/telephone.svg", alt="")
+                        | (04) 3786 8904
+                li
+                    span
+                        img(src="../../images/old-handphone.svg", alt="")
+                        | (08) 6680 9686
+                li
+                    img.sunshop-footer__title__icon(src="../../images/email-filled-closed-envelope.svg", alt="")
+                    a.footer-mail(href="") support@bizweb.vn
+          .col-lg-2.col-md-6
+            .sunshop-footer__title
+              h3 Chuyển hàng
+            ul.sunshop-footer__body
+              li
+                a.footer-link(href="") Mua sắm trực tuyến
+              li
+                a.footer-link(href="") Đến từ chúng tôi gửi đến
+              li
+                a.footer-link(href="") Chính sách vận chuyển
+              li
+                a.footer-link(href="") Vận chuyển thông tin
+              li
+                a.footer-link(href="") Phiếu quà tặng
+          .col-lg-2.col-md-6
+            .sunshop-footer__title
+              h3 Hỗ trợ
+            ul.sunshop-footer__body
+              li
+                a.footer-link(href="") Câu chuyện của chúng ta
+              li
+                a.footer-link(href="") Thanh toán an toàn
+              li
+                a.footer-link(href="") Tùy chọn Vận Chuyển
+              li
+                a.footer-link(href="") Chính sách vận chuyển
+              li
+                a.footer-link(href="") Liên hệ với chúng tôi
+          .col-lg-2.col-md-6
+            .sunshop-footer__title
+              h3 Thông tin
+            ul.sunshop-footer__body
+              li
+                a.footer-link(href="") Về Chúng Tôi
+              li
+                a.footer-link(href="") Điều khoản & điều kiện
+              li
+                a.footer-link(href="") Chính Sách Riêng Tư
+              li
+                a.footer-link(href="") Đơn đặt hàng và Returns
+              li
+                a.footer-link(href="") Sơ đồ trang web
+          .col-lg-2.col-md-6
+            .sunshop-footer__title
+              h3 Tài khoản
+            ul.sunshop-footer__body
+              li
+                a.footer-link(href="") Xem Giỏ hàng
+              li
+                a.footer-link(href="") Sản phẩm yêu thích
+              li
+                a.footer-link(href="") Kiểm tra
+              li
+                a.footer-link(href="") Theo dõi đặt hàng của tôi
+              li
+                a.footer-link(href="") Giúp
+    .footer__copyright
+      .container
+        p &copy; Copyright 2015 - 2016
+        ul
+          li
+            img(src="../../images/card3.png", alt="")
+          li
+            img(src="../../images/card2.png", alt="")
+          li
+            img(src="../../images/card1.png", alt="")
+          li
+            img(src="../../images/card.png", alt="")
+        .clearfix

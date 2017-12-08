@@ -1,0 +1,92 @@
+.sunshop-intro {
+  .sunshop-intro__utilities {
+    text-align: center;
+    padding-top: 19px;
+    padding-bottom: 9px;
+    ul {
+      padding: 0;
+      li {
+        display: inline-block;
+        padding-left: 60px;
+        padding-right: 60px;
+        &:first-child {
+          padding-left: 0;
+        }
+        &:last-child {
+          padding-right: 0;
+        }
+        span.sunshop-intro__wrap-img {
+          background-color: #484848;
+          border-radius: 50%;
+          width: 39px;
+          height: 39px;
+          display: inline-block;
+          line-height: 39px;
+          margin-right: 12px;
+        }
+      }
+    }
+  }
+  .sunshop-intro__wrap-banner {
+    .sidebar-offcanvas {
+      .sunshop-intro__category {
+        border: solid 1px #02C5BF;
+        border-radius: 3px;
+        .sunshop-intro__category__title {
+          background-color: #02C5BF;
+          color: #fff;
+          text-transform: uppercase;
+          padding: 12px 32px 5px 32px;
+        }
+        .sunshop-intro__category__body {
+          padding: 10px 21px 17px 32px;
+          ul {
+            padding: 0;
+            margin: 0;
+            li {
+              list-style-type: none;
+              padding: 4px 0;
+              a {
+                text-transform: uppercase;
+                font-size: 14px;
+                // font-family: 'Roboto-Bold';
+                font-weight: 700;
+                color: #454545;
+                transition: 0.3s;
+                &:hover {
+                  color: #02C5BF;
+                }
+                i {
+                  float: right;
+                  font-weight: bold;
+                }
+              }
+              &:last-of-type {
+                padding-bottom: 6px;
+              }
+            }
+            .sunshop-intro__category__viewmore {
+              color: #454545;
+              &:hover {
+                color: #02C5BF;
+                cursor: pointer;
+              }
+              i {
+                color: #03C5C5;
+                margin-right: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+    div {
+      .sunshop-intro__banner {
+        img {
+          width: 100%;
+          border-radius: 1px;
+        }
+      }
+    }
+  }
+}
