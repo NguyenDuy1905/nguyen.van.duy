@@ -1,0 +1,49 @@
+include ../navigation/navigation
+
+mixin header
+	seciton.sunshop-header
+		.container
+			.sunshop-header__left.float-left
+				ul
+					li
+						a(href="") Sunshop
+					li
+						a(href="") MARKETPLACE
+					li
+						a(href="") HOT DEAL
+					li
+						a(href="") SMAGAZINE
+			.sunshop-header__right.float-right
+				ul
+					li
+						a(href="") CHAT
+					li
+						a(href="") TÀI KHOẢN
+					li
+						a(href="") TRỢ GIÚP
+			.clearfix
+		//- Navbar
+		.wrap-navbar
+			.container
+				nav.navbar.navbar-expand-lg.navbar-light
+					//- Logo
+					a.navbar-brand(href="")
+						img(src="../../../../images/logo.png", alt="")
+					//- Form Search, Cart & Button Menu Responsive
+					.navbar__right.ml-auto
+						#navbarSupportedContent
+							form.form-inline.my-2.my-lg-0
+								input(type="search", placeholder="Tìm kiếm sản phẩm...", aria-label="Search")
+								button.btn.btn-outline-success.my-2.my-sm-0(type="button", href="javascript:void(0)")
+									i.fa.fa-search(aria-hidden="true")
+						.sunshop-cart.d-flex
+							img(src="", alt="")
+							p
+								span 0
+								| &nbsp;sản phẩm
+						.menu-reponsive
+							i.fa.fa-th-large(aria-hidden="true")
+						.clearfix
+		//- Navigation
+		+navigation
+		
