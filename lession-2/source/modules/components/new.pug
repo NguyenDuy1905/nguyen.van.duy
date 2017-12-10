@@ -3,14 +3,14 @@ mixin new(src, timeDay, timePost, timeComent, title, content)
     .col-sm-6
       img(src=src, alt="")
     .col-sm-6
-      .sunshop-new__time
+      .new__time
         span #{timeDay}
         span Đăng bởi #{timePost}
         span #{timeComent} Coments
-      .sunshop-new__content
+      .new__content
         h3
           a(href="") #{title}
         p #{content}
-      .sunshop-new__viewmore
+      .new__viewmore
         a Xem thêm 
           i.fa.fa-angle-right(aria-hidden="true")
