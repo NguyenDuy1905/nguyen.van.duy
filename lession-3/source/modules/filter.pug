@@ -1,0 +1,43 @@
+include title
+
+mixin filter
+  .filter.js-filter__title
+    //- .filter__title
+    +title-h4("DANH MỤC SẢN PHẨM")
+    .filter__body.js-filter__body
+      ul.filter__list
+        li.filter__item
+          a.filter__link.clearfix(href="") BÁN CHẠY NHẤT
+            i.filter__icon-arrow.fa.fa-angle-right.pull-right
+        li.filter__item
+          a.filter__link.clearfix(href="") HÀNG MỚI VỀ
+            i.filter__icon-arrow.fa.fa-angle-right.pull-right
+        li.filter__item
+          a.filter__link.clearfix(href="") GIẢM GIÁ ĐẾN 50%
+            i.filter__icon-arrow.fa.fa-angle-right.pull-right
+        li.filter__item
+          a.filter__link.clearfix(href="") QUẦN ÁO
+            i.filter__icon-arrow.fa.fa-angle-right.pull-right
+          ul.filter__list.filter__list--c2
+            - var list = ['Áo Thun', 'Áo Sơ Mi', 'Quần Jeans', 'Quần Shorts', 'Xem thêm']
+            each item in list
+              li.filter__item.filter__item--c2
+                a.filter__link--c2(href="")
+                  i.filter__icon-circle.fa.fa-circle
+                  | #{item}
+        li.filter__item
+          a.filter__link.clearfix(href="") GIÀY DÉP
+            i.filter__icon-arrow.fa.fa-angle-right.pull-right
+          ul.filter__list.filter__list--c2
+            - var list = ['Giày Casual', 'Giày Da và Giày Tây', 'Sneakers']
+            each item in list
+              li.filter__item.filter__item--c2
+                a.filter__link--c2(href="")
+                  i.filter__icon-circle.fa.fa-circle
+                  | #{item}
+        li.filter__item
+          a.filter__link.clearfix(href="") TÚI, BALO &amp; VÍ
+            i.filter__icon-arrow.fa.fa-angle-right.pull-right
+      a.filter__viewmore(href="")
+        i.filter__icon-plus.fa.fa-plus-circle
+        | Xem thêm

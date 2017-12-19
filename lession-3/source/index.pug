@@ -1,0 +1,132 @@
+include modules/head
+include modules/navigation
+include modules/header
+include modules/title
+include modules/product
+include modules/filter
+include modules/posts
+include modules/footer
+include modules/main-js
+
+doctype html
+html
+  +head
+  body
+    //- [HEADER]
+    +header
+    //- [INTRO]
+    section.intro
+      .container
+        .row
+          .col-lg-3.col-md-6
+            .intro__element
+              span.intro__element-image
+                img(src="images/icon-exchange.png", alt="")
+              | Trả hàng trong 30 ngày
+          .col-lg-3.col-md-6
+            .intro__element
+              span.intro__element-image
+                img(src="images/icon-truck.png", alt="")
+              | Giao hàng miễn phí
+          .col-lg-3.col-md-6
+            .intro__element
+              span.intro__element-image
+                img(src="images/icon-money.png", alt="")
+              | Thanh toán linh hoạt
+          .col-lg-3.col-md-6
+            .intro__element
+              span.intro__element-image
+                img(src="images/icon-telephone.png", alt="")
+              | Hotline: 0904079496
+    //- [BANNER]
+    section.banner
+      .container
+        .row
+          .col-xs-12.col-md-4.col-lg-3
+            +filter
+          .col-xs-12.col-md-8.col-lg-9
+            .banner__image
+              img(src="images/banner.png", alt="")
+    //- [STYLE]
+    section.style
+      .container
+        .row
+          each item in [1, 2, 3]
+            .col-md-4.col-sm-6
+              img.style__element(src="images/style"+item+".png", alt="")
+    //- [SLIDE]
+    section.slide
+      .container
+        +title-h2("Sản phẩm bán chạy")
+        .slide__wrap
+          .owl-slide.js-owl-slide.owl-carousel.owl-theme
+            .slide__element.item
+              +product("images/product1.jpg", "Áo thun tay ngắn cổ tròn", "340.000", "268.000")
+            .slide__element.item
+              +product("images/product2.jpg", "Áo thun tay ngắn cổ tròn", "340.000", "268.000")
+            .slide__element.item
+              +product("images/product3.jpg", "Áo thun tay ngắn cổ tròn", "340.000", "268.000")
+            .slide__element.item
+              +product("images/product5.jpg", "Áo thun tay ngắn cổ tròn", "340.000", "268.000")
+            .slide__element.item
+              +product("images/product1.jpg", "Áo thun tay ngắn cổ tròn", "340.000", "268.000")
+            .slide__element.item
+              +product("images/product2.jpg", "Áo thun tay ngắn cổ tròn", "340.000", "268.000")
+            .slide__element.item
+              +product("images/product3.jpg", "Áo thun tay ngắn cổ tròn", "340.000", "268.000")
+    //- [BANNER2]
+    section.banner2
+      .container
+        img.banner2__image(src="images/banner2.png", alt="")
+    //- [SLIDE2]
+    section.slide.slide2
+      .container
+        .slide2__wrap-all
+          +title-h2("Tất cả sản phẩm")
+          ul.small-menu
+            li.small-menu__item
+              a.small-menu__link(href="") Nam
+            li.small-menu__item.small-menu__item--active
+              a.small-menu__link(href="") Nữ
+            li.small-menu__item
+              a.small-menu__link(href="") Trẻ em
+          .slide__wrap
+            .owl-slide.js-owl-slide.owl-carousel.owl-theme
+              .slide__element.item
+                +product("images/product1.jpg", "Áo thun tay ngắn cổ tròn", "340.000", "268.000")
+                +product("images/product1.jpg", "Áo thun tay ngắn cổ tròn", "340.000", "268.000")
+              .slide__element.item
+                +product("images/product2.jpg", "Áo thun tay ngắn cổ tròn", "340.000", "268.000")
+                +product("images/product2.jpg", "Áo thun tay ngắn cổ tròn", "340.000", "268.000")
+              .slide__element.item
+                +product("images/product3.jpg", "Áo thun tay ngắn cổ tròn", "340.000", "268.000")
+                +product("images/product3.jpg", "Áo thun tay ngắn cổ tròn", "340.000", "268.000")
+              .slide__element.item
+                +product("images/product5.jpg", "Áo thun tay ngắn cổ tròn", "340.000", "268.000")
+                +product("images/product5.jpg", "Áo thun tay ngắn cổ tròn", "340.000", "268.000")
+              .slide__element.item
+                +product("images/product1.jpg", "Áo thun tay ngắn cổ tròn", "340.000", "268.000")
+                +product("images/product1.jpg", "Áo thun tay ngắn cổ tròn", "340.000", "268.000")
+              .slide__element.item
+                +product("images/product2.jpg", "Áo thun tay ngắn cổ tròn", "340.000", "268.000")
+                +product("images/product2.jpg", "Áo thun tay ngắn cổ tròn", "340.000", "268.000")
+    //- [NEW]
+    section.new
+      .container
+        +title-h2("Tin tức")
+        .row
+          .col-lg-6
+            +posts("images/image.jpg", "22/6/2016", "Giangle", "0", "Chiến lược chọn mua mỹ phẩm thông minh", "Một khi đã biết chăm chút vẻ ngoài cho bản thân mình, định kỳ, các cô nàng sẽ phải mất một khoản kha khá để đầu tư cho các sản phẩm dưỡng da, đồ mỹ phẩm...")
+          .col-lg-6
+            +posts("images/image2.jpg", "22/6/2016", "Giangle", "0", "Chiến lược chọn mua mỹ phẩm thông minh", "Một khi đã biết chăm chút vẻ ngoài cho bản thân mình, định kỳ, các cô nàng sẽ phải mất một khoản kha khá để đầu tư cho các sản phẩm dưỡng da, đồ mỹ phẩm...")
+    //- [CUSTOMER]
+    section.customer
+      .container
+        .owl-customer.js-owl-customer.owl-carousel.owl-theme
+          each item in [6, 2, 3, 4, 5, 6, 3, 2]
+            .customer__element.item
+              img(src="images/logo"+item+".png", alt="")
+    //- [FOOTER]
+    +footer
+    //- [MAIN-JS]
+    +main-js

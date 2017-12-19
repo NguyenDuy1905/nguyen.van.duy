@@ -1,0 +1,8 @@
+mixin navigation
+  .navigation.js-navigation
+    .container
+      ul.navigation__list
+        - var list = ['Hàng mới về', 'Trang phục', 'Giày túi xách', 'Phụ kiện', 'Thể thao', 'Đồng hồ', 'Làm đẹp', 'Tin tức', 'Các thương hiệu', 'Giảm giá đến 50%']
+        each item in list
+          li.navigation__item
+            a.navigation__link(href="") #{item}

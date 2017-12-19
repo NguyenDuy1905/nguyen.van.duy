@@ -1,0 +1,17 @@
+mixin posts(src, timeDay, timePost, timeComent, title, content)
+  .posts
+    .row
+      .col-sm-6
+        img.posts__images(src=src, alt="")
+      .col-sm-6
+        .posts__time
+          span.posts__time-element.posts__time--day #{timeDay}
+          span.posts__time-element.posts__time--post Đăng bởi #{timePost}
+          span.posts__time-element.posts__time--coment #{timeComent} Coments
+        .posts__content
+          h3.posts__title
+            a(href="") #{title}
+          p.posts__text #{content}
+        .posts__viewmore
+          a(href="") Xem thêm
+            i.posts__icon-right.fa.fa-angle-right(aria-hidden="true")
