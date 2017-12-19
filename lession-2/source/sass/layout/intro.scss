@@ -1,21 +1,27 @@
-.sunshop-intro {
-  .sunshop-intro__utilities {
-    text-align: center;
+.intro {
+  .intro__utilities {
     padding-top: 19px;
     padding-bottom: 9px;
+    @media (min-width: 992px) {
+      text-align: center;
+    }
     ul {
       padding: 0;
       li {
         display: inline-block;
-        padding-left: 60px;
-        padding-right: 60px;
+        @media (min-width: 1200px) {
+          padding-right: 60px;
+        }
+        @media (min-width: 992px) {
+          padding-left: 60px;
+        }
         &:first-child {
           padding-left: 0;
         }
         &:last-child {
           padding-right: 0;
         }
-        span.sunshop-intro__wrap-img {
+        .intro__wrap-img {
           background-color: #484848;
           border-radius: 50%;
           width: 39px;
@@ -27,18 +33,34 @@
       }
     }
   }
-  .sunshop-intro__wrap-banner {
-    .sidebar-offcanvas {
-      .sunshop-intro__category {
+  .intro__wrap-banner {
+    @media (min-width: 992px) {
+      .button-offcanvas {
+        display: none;
+      }
+    }
+    .button-offcanvas {
+      button {
+        margin-bottom: 30px;
+        background-color: #02C5BF;
+        border-color: #02C5BF;
+      }
+    }
+    #sidebar {
+      .intro__category {
+        position: absolute;
+        width: calc(100% - 30px);
         border: solid 1px #02C5BF;
         border-radius: 3px;
-        .sunshop-intro__category__title {
+        z-index: 9999;
+        background-color: #fff;
+        .intro__title {
           background-color: #02C5BF;
           color: #fff;
           text-transform: uppercase;
           padding: 12px 32px 5px 32px;
         }
-        .sunshop-intro__category__body {
+        .intro__body {
           padding: 10px 21px 17px 32px;
           ul {
             padding: 0;
@@ -49,12 +71,12 @@
               a {
                 text-transform: uppercase;
                 font-size: 14px;
-                // font-family: 'Roboto-Bold';
                 font-weight: 700;
                 color: #454545;
                 transition: 0.3s;
                 &:hover {
                   color: #02C5BF;
+                  cursor: pointer;
                 }
                 i {
                   float: right;
@@ -64,8 +86,27 @@
               &:last-of-type {
                 padding-bottom: 6px;
               }
+              .intro__category2 {
+                li {
+                  padding: 3px 0 3px 9px;
+                  &:first-child {
+                    padding-top: 5px;
+                  }
+                  a {
+                    font-weight: 400;
+                    text-transform: unset;
+                    i {
+                      float: unset;
+                      font-weight: normal;
+                      font-size: 6px;
+                      vertical-align: middle;
+                      margin-right: 5px;
+                    }
+                  }
+                }
+              }
             }
-            .sunshop-intro__category__viewmore {
+            .intro__viewmore {
               color: #454545;
               &:hover {
                 color: #02C5BF;
@@ -81,12 +122,18 @@
       }
     }
     div {
-      .sunshop-intro__banner {
+      .intro__banner {
         img {
           width: 100%;
           border-radius: 1px;
         }
       }
+    }
+  }
+  .intro__style {
+    margin-top: 30px;
+    img {
+      width: 100%;
     }
   }
 }

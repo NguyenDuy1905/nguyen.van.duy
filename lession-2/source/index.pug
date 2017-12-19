@@ -12,34 +12,34 @@ html
   body
     +header
     //- [Intro]
-    section.sunshop-intro.container
-      .sunshop-intro__utilities
+    section.intro.container
+      .intro__utilities
         ul
           li
-            span.sunshop-intro__wrap-img
-              img(src="../images/icon-exchange.png")
+            span.intro__wrap-img
+              img(src="../images/icon-exchange.png", alt="")
             | Trả hàng trong 30 ngày
           li
-            span.sunshop-intro__wrap-img
-              img(src="../images/icon-truck.png")
+            span.intro__wrap-img
+              img(src="../images/icon-truck.png", alt="")
             | Giao hàng miễn phí
           li
-            span.sunshop-intro__wrap-img
-              img(src="../images/icon-money.png")
+            span.intro__wrap-img
+              img(src="../images/icon-money.png", alt="")
             | Thanh toán linh hoạt
           li
-            span.sunshop-intro__wrap-img
-              img(src="../images/icon-telephone.png")
+            span.intro__wrap-img
+              img(src="../images/icon-telephone.png", alt="")
             | Hotline: 090 4079496
-      //- end .sunshop-intro__utilities
-      .sunshop-intro__wrap-banner.row.row-offcanvas.row-offcanvas-left
+      //- end .intro__utilities
+      .intro__wrap-banner.row.row-offcanvas.row-offcanvas-left
         .button-offcanvas.container
           button.btn.btn-primary.btn-xs.btn-offcanvas(type="button", data-toggle="offcanvas", style="width: 100%;") Danh mục sản phẩm
-        #sidebar.col-xs-6.col-md-3.sidebar-offcanvas
-          .sunshop-intro__category
-            .sunshop-intro__category__title
+        #sidebar.col-xs-12.col-md-12.col-lg-3.sidebar-offcanvas
+          .intro__category
+            .intro__title
               h4 Danh mục sản phẩm
-            .sunshop-intro__category__body
+            .intro__body
               ul
                 li
                   a Bán chạy nhất
@@ -53,7 +53,7 @@ html
                 li
                   a Quần áo
                     i.fa.fa-angle-right(aria-hidden="true")
-                  ul.sunshop-intro__category__c2
+                  ul.intro__category2
                     li
                       a
                         i.fa.fa-circle(aria-hidden="true")
@@ -77,7 +77,7 @@ html
                 li
                   a Giày dép
                     i.fa.fa-angle-right(aria-hidden="true")
-                  ul.sunshop-intro__category__c2
+                  ul.intro__category2
                     li
                       a
                         i.fa.fa-circle(aria-hidden="true")
@@ -93,25 +93,94 @@ html
                 li
                   a Túi, balo & ví
                     i.fa.fa-angle-right(aria-hidden="true")
-                a.sunshop-intro__category__viewmore
+                a.intro__viewmore
                   i.fa.fa-plus-circle(aria-hidden="true")
                   | Xem thêm
-        .col-xs-12.col-md-9
-          .sunshop-intro__banner
+        .col-xs-12.col-md-12.col-lg-9
+          .intro__banner
             img(src="../images/banner.png", alt="")
+      .intro__style
+        .row
+          .col-md-4.col-sm-6
+            .intro__element
+              img(src="../images/intro-style.png", alt="")
+          .col-md-4.col-sm-6
+            .intro__element
+              img(src="../images/intro-style2.png", alt="")
+          .col-md-4.col-sm-6
+            .intro__element
+              img(src="../images/intro-style3.png", alt="")
     //- [Hot]
-    //- section.sunshop-hot.container
-    //-   .sunshop-title
-    //-     h2 Sản phẩm bán chạy
-    //-   .sunshop-hot__slider
-    //-     .owl-carousel.owl-hot.owl-theme
-    //-       .item
-    //-         +product('../images/product1.jpg', 'Áo thun tay ngắn cổ tròn', '340.000', '268.000')
-    //-       .item
-    //-         +product('../images/product2.jpg', 'Áo thun tay ngắn cổ tròn', '340.000', '268.000')
-    //-       .item
-    //-         +product('../images/product3.jpg', 'Áo thun tay ngắn cổ tròn', '340.000', '268.000')
-    //-       .item
-    //-         +product('../images/product5.jpg', 'Áo thun tay ngắn cổ tròn', '340.000', '268.000')
+    section.hot.container
+      .title
+        h2 Sản phẩm bán chạy
+      .hot__slider
+        .owl-carousel.owl-hot.owl-theme
+          .item
+            +product('../images/product1.jpg', 'Áo thun tay ngắn cổ tròn', '340.000', '268.000')
+          .item
+            +product('../images/product2.jpg', 'Áo thun tay ngắn cổ tròn', '340.000', '268.000')
+          .item
+            +product('../images/product3.jpg', 'Áo thun tay ngắn cổ tròn', '340.000', '268.000')
+          .item
+            +product('../images/product5.jpg', 'Áo thun tay ngắn cổ tròn', '340.000', '268.000')
+      .hot__banner
+        img(src="../images/banner2.png", alt="")
+    //- [product]
+    section.hot.product.container
+      .title
+        h2 Tất cả sản phẩm
+        .title__menu
+          ul.product__option
+            li
+              a Nam
+            li.active
+              a Nữ
+            li
+              a Trẻ em
+        .clearfix
+      .product__slider.hot__slider
+        .owl-carousel.owl-hot.owl-theme
+          .item
+            +product('../images/product1.jpg', 'Áo thun tay ngắn cổ tròn', '340.000', '268.000')
+            +product('../images/product1.jpg', 'Áo thun tay ngắn cổ tròn', '340.000', '268.000')
+          .item
+            +product('../images/product2.jpg', 'Áo thun tay ngắn cổ tròn', '340.000', '268.000')
+            +product('../images/product2.jpg', 'Áo thun tay ngắn cổ tròn', '340.000', '268.000')
+          .item
+            +product('../images/product3.jpg', 'Áo thun tay ngắn cổ tròn', '340.000', '268.000')
+            +product('../images/product3.jpg', 'Áo thun tay ngắn cổ tròn', '340.000', '268.000')
+          .item
+            +product('../images/product5.jpg', 'Áo thun tay ngắn cổ tròn', '340.000', '268.000')
+            +product('../images/product5.jpg', 'Áo thun tay ngắn cổ tròn', '340.000', '268.000')
+    //- [New]
+    section.new.container
+      .title
+        h2 Tin tức
+      .row
+        .col-lg-6.new-rps
+          +new('../images/image.jpg', '22/6/2016', 'Giangle', '0', 'Chiến lược chọn mua mỹ phẩm thông minh', 'Một khi đã biết chăm chút vẻ ngoài cho bản thân mình, định kỳ, các cô nàng sẽ phải mất một khoản kha khá để đầu tư cho các sản phẩm dưỡng da, đồ mỹ phẩm...')
+        .col-lg-6.new-rps
+          +new('../images/image2.jpg', '22/6/2016', 'Giangle', '0', 'Chiến lược chọn mua mỹ phẩm thông minh', 'Một khi đã biết chăm chút vẻ ngoài cho bản thân mình, định kỳ, các cô nàng sẽ phải mất một khoản kha khá để đầu tư cho các sản phẩm dưỡng da, đồ mỹ phẩm...')
+    //- [customer]
+    section.customer
+      .container
+        .owl-carousel.owl-customer.owl-theme
+          .item
+            img(src="../images/logo6.png", alt="")
+          .item
+            img(src="../images/logo2.png", alt="")
+          .item
+            img(src="../images/logo3.png", alt="")
+          .item
+            img(src="../images/logo4.png", alt="")
+          .item
+            img(src="../images/logo5.png", alt="")
+          .item
+            img(src="../images/logo6.png", alt="")
+          .item
+            img(src="../images/logo3.png", alt="")
+          .item
+            img(src="../images/logo2.png", alt="")
     +footer
     +library

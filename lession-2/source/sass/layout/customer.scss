@@ -1,0 +1,24 @@
+.customer {
+  background-color: #F5F5F5;
+  .owl-carousel {
+    padding-top: 29px;
+    padding-bottom: 20px;
+    .item {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    .owl-dots {
+      display: none;
+    }
+    .owl-nav {
+      span {
+        right: 0;
+      }
+      .owl-prev {
+        span {
+          left: 0;
+        }
+      }
+    }
+  }
+}
