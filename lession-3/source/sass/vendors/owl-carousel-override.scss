@@ -1,0 +1,64 @@
+.owl-carousel {
+  position: relative;
+  .owl-nav {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    .owl-prev, .owl-next {
+      height: 100%;
+      background-color: transparent;
+      border-radius: 0;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+    }
+    img {
+      width: 15px;
+      margin-top: 11px;
+      opacity: 0.5;
+    }
+    span {
+      width: 38px;
+      height: 38px;
+      text-align: center;
+      background-color: $darkest1-white;
+      border-radius: 50%;
+      position: absolute;
+      top: calc(50% - 15px);
+      right: 10px;
+      transition: 0.3s;
+      &:hover {
+        background-color: $blue;
+      }
+    }
+  }
+}
+.owl-dots {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  .owl-nav {
+    height: 38px;
+    top: -87px;
+    .owl-prev {
+      left: unset;
+      right: 44px;
+    }
+  }
+}
+.owl-prev, .owl-next {
+  &:hover {
+    img {
+      opacity: 0.9;
+    }
+  }
+}
+.owl-prev {
+  left: 0;
+}
+.owl-next {
+  right: 0;
+}

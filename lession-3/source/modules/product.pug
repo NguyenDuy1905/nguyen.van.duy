@@ -1,0 +1,12 @@
+mixin product(src, productName, rateOld, rateNew)
+  .product
+    img.product__img(src=src, alt="")
+    .product__content
+      h4.product__element.product__name
+        a(href="") #{productName}
+      .product__element.product__rate
+        span.product__rate--old #{rateOld} #[sup đ]
+        | - &nbsp;
+        span.product__rate--new #{rateNew} #[sup đ]
+      .product__element.product__buy
+        button.button Mua hàng

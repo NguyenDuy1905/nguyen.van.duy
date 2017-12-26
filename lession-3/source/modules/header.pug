@@ -1,0 +1,35 @@
+include navigation
+
+mixin header
+  header.header
+    .header__element.menu.clearfix
+      .container
+        ul.menu__block.menu__block--left.float-left
+          - var list = ['Sunshop', 'Marketplace', 'Hot Deal', 'Smagazine']
+          each item in list
+            li.menu__block-item.menu__block--left-item
+              a.menu__link(href="") #{item}
+        ul.menu__block.menu__block--right.float-right
+          - var list = ['Chat', 'Tài khoản', 'Trợ giúp']
+          each item in list
+            li.menu__block-item.menu__block--right-item
+              a.menu__link(href="") #{item}
+    nav.header__element
+      .navbar
+        .container
+          .navbar__logo
+            a(href="")
+              img.navbar__img(src="../images/logo.png", alt="")
+          .navbar__right.ml-auto.clearfix
+            form.search.float-left
+              input.search__input.js-search__input(type="search", aria-label="Search", placeholder="Tìm kiếm sản phẩm...")
+              button.search__button.js-search__button.btn(type="button")
+                i.fa.fa-search(aria-hidden="true")
+            .cart
+              img.cart__img(src="../images/cart.png", alt="")
+              p
+                span.cart__number 0
+                span.cart__text sản phẩm
+            .menu-responsive.js-menu-responsive.float-right
+              i.menu-responsive__icon.fa.fa-th-large(aria-hidden="true")
+    +navigation

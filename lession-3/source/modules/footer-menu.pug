@@ -1,0 +1,10 @@
+include title
+
+mixin footer-menu(titleName, item1, item2, item3, item4, item5)
+  .footer-menu
+    +title-h3(titleName)
+    ul.footer-menu__list
+      - var list = [item1, item2, item3, item4, item5]
+      each item in list
+        li.footer-menu__item
+          a.footer-menu__link(href="") #{item}

@@ -1,0 +1,96 @@
+.filter {
+  border: solid 1px $blue;
+  border-radius: 3px;
+  @media (max-width: 1199px) {
+    width: calc(100% - 30px);
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    position: static;
+    overflow: visible;
+  }
+  .title-h4 {
+    background-color: $blue;
+    padding: 12px 32px 5px 32px;
+    @media (max-width: 1199px) {
+      padding-left: 22px;
+      padding-right: 22px;
+    }
+    @media (max-width: 767px) {
+      text-align: center;
+    }
+    &__name {
+      @media (max-width: 1199px) {
+        font-size: 15px;
+      }
+    }
+  }
+  &__body {
+    padding: 10px 21px 17px 32px;
+    @media (max-width: 1199px) {
+      height: calc(100% - 43px);
+      padding-left: 22px;
+      padding-right: 11px;
+      overflow-y: scroll;
+    }
+    @media (max-width: 767px) {
+      display: none;
+      height: auto;
+      padding-left: 32px;
+      padding-right: 21px;
+      overflow-y: visible;
+    }
+  }
+  &__link {
+    display: block;
+    width: 100%;
+    color: $lighten-black;
+    font-weight: 600;
+    padding: 4px 0;
+    transition: 0.3s;
+    .filter__icon-arrow {
+      font-weight: 600;
+    }
+    &:hover {
+      color: $blue;
+    }
+  }
+  &__link--c2 {
+    display: inline-block;
+    color: $lighten-black;
+    font-weight: 400;
+    padding: 3px 0;
+    transition: 0.3s;
+    .filter__icon-circle {
+      font-size: 6px;
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+    &:hover {
+      color: $blue;
+    }
+  }
+  &__list--c2 {
+    margin-top: -2px;
+    padding-left: 11px;
+    padding-bottom: 4px;
+  }
+  &__viewmore {
+    display: block;
+    color: $lighten-black;
+    margin-top: 2px;
+    transition: 0.3s;
+    .filter__icon-plus {
+      color: $blue;
+      margin-right: 5px;
+    }
+    &:hover {
+      color: $blue;
+    }
+  }
+}
