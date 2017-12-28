@@ -1,3 +1,34 @@
-mixin header(page)
-  .header
-    h1 This is Header modules
+mixin header
+  .header__wrap
+    .container
+      .header
+        .header__element.header__element--left.mr-auto
+          .logo
+            a.logo__link(href="")
+              img.logo__image(src="../../images/logo.png", alt="")
+        .header__element.header__element--center.m-auto
+          ul.menu#menu-id.js-menu
+            li.menu__item
+              a.menu__link TRANG CHỦ
+            li.menu__item
+              a.menu__link GIỚI THIỆU
+            li.menu__item.menu__item--active
+              a.menu__link SẢN PHẨM
+                i.menu__icon.fa.fa-angle-down(aria-hidden="true")
+            li.menu__item
+              a.menu__link TIN TỨC
+            li.menu__item
+              a.menu__link BẢN ĐỒ
+            li.menu__item
+              a.menu__link LIÊN HỆ
+        .header__element.header__element--right.ml-auto
+          .cart
+            a.cart__link
+              i.cart__icon.fa.fa-shopping-cart(aria-hidden="true")
+          .search
+            a.search__link
+              i.search__icon.fa.fa-search(aria-hidden="true")
+        .header__element.header__element--right.menu-responsive.js-menu-responsive
+          span.menu-responsive__bar
+          span.menu-responsive__bar
+          span.menu-responsive__bar
