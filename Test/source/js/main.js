@@ -1,2 +1,6 @@
 //=require jquery/dist/jquery.min.js
-//=require zoom.js
+
+// Click Menu
+$(document).on('click', '.js-menu-responsive', function() {
+	$('.js-menu').slideToggle();
+});

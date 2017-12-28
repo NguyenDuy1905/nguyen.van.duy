@@ -62,7 +62,7 @@ var scss = {
     precison: 3,
     errLogToConsole: true,
     includePaths: [
-      './node_modules/bootstrap-sass/assets/stylesheets',
+      './node_modules/bootstrap-v4-dev/scss',
       './node_modules/font-awesome/scss/'
     ]
   }
