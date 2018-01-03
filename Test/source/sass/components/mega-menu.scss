@@ -1,0 +1,50 @@
+.box {
+  display: inline-block;
+  background-color: $white;
+  border: solid 2px $green;
+  position: absolute;
+  top: 60px;
+}
+.mega-menu {
+  width: 670px;
+  padding: 30px 15px;
+  left: -300px;
+  &__body {
+    margin-top: 24px;
+  }
+  &__block {
+    display: inline-block;
+    width: 33.3%;
+    padding: 0 25px;
+    float: left;
+  }
+  &__item {
+    color: $lighter-black-45;
+  }
+  &__link {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 22px;
+    position: relative;
+    transition: 0.3s;
+    &:before {
+      content: '';
+      width: 3px;
+      height: 3px;
+      background-color: transparent;
+      position: absolute;
+      top: 10px;
+      left: 0;
+      transition: 0.3s;
+    }
+  }
+}
+#mega-menu {
+  .mega-menu__link:hover {
+    color: $green;
+    padding-left: 6px;
+    &:before {
+      background-color: $green;
+    }
+  }
+}

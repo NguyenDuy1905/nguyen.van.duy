@@ -1,0 +1,16 @@
+.title-size-14 {
+  position: relative;
+  &__name {
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  &:after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: $darker-white-91;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+  }
+}

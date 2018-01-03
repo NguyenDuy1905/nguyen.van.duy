@@ -1,0 +1,15 @@
+// Arrow
+.arrow {
+	display: inline-block;
+	width: 0;
+	height: 0;
+}
+// Arrow up
+.arrow-up {
+	border-left: solid 11px transparent;
+	border-right: solid 11px transparent;
+	border-bottom: solid 11px $green;
+  position: absolute;
+  top: -11px;
+  left: calc(50% - 11px);
+}

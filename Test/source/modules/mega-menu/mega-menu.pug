@@ -1,0 +1,31 @@
+include ../title/title
+
+mixin mega-menu
+
+  #mega-menu.mega-menu.box.clearfix
+    .arrow.arrow-up
+    .mega-menu__wrap
+      .mega-menu__block
+        .mega-menu__title
+          +title-size-14("DƯỠNG DA")
+        ul.mega-menu__body
+          - var list = ['Áo khoác', 'Bộ áo liền quần', 'Dresses', 'Quần / Váy', 'Quần short', 'Quần jean', 'Đồ đan', 'Áo nỉ']
+          each item in list
+            li.mega-menu__item
+              a.mega-menu__link #{item}
+      .mega-menu__block
+        .mega-menu__title
+          +title-size-14("NƯỚC HOA")
+        ul.mega-menu__body
+          - var list = ['Áo cánh / Áo sơ mi', 'Túi xách & Balô', 'Khăn quàng cổ và Foulards', 'Dệt kim Hats & Gloves', 'Vớ & Socks', 'Jewerly', 'Bị bảo vệ', 'Giày']
+          each item in list
+            li.mega-menu__item
+              a.mega-menu__link #{item}
+      .mega-menu__block
+        .mega-menu__title
+          +title-size-14("TRANG SỨC")
+        ul.mega-menu__body
+          - var list = ['Áo cánh / Áo sơ mi', 'Túi xách & Balô', 'Khăn quàng cổ và Foulards', 'Dệt kim Hats & Gloves', 'Vớ & Socks', 'Jewerly', 'Bị bảo vệ', 'Giày']
+          each item in list
+            li.mega-menu__item
+              a.mega-menu__link #{item}

@@ -1,0 +1,46 @@
+.cart-detail {
+  width: 205px;
+  padding: 10px;
+  left: -93px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  &__block {
+    margin-bottom: 17px;
+  }
+  &__element {
+    float: left;
+    margin-right: 12px;
+  }
+  &__delete {
+    background-color: transparent;
+    border: none;
+    margin-top: -4px;
+    margin-left: -8px;
+    margin-right: 0;
+    &:hover {
+      color: $green;
+      cursor: pointer;
+    }
+  }
+  &__name {
+    color: $lighter-black-10;
+    margin-bottom: 0;
+  }
+  &__total {
+    border-top: solid 1px $darker-white-91;
+    padding-top: 18px;
+    margin-bottom: 16px;
+    .rate {
+      margin: 0;
+    }
+  }
+  .button {
+    margin-bottom: 14px;
+    transition: 0.3s;
+    &:hover {
+      background-color: $green;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+include ../button/button
+
+mixin cart-detail
+
+  .cart-detail.box
+    .arrow.arrow-up
+    .cart-detail__wrap
+      .cart-detail__block.clearfix
+        img.cart-detail__element.cart-detail__image(src="../../images/cart-detail.jpg", alt="")
+        .cart-detail__element.cart-detail__content
+          h6.cart-detail__name Áo sơ mi nam
+          p.rate.rate--new 120.000
+            sup đ
+        button.cart-detail__element.cart-detail__delete ×
+      .cart-detail__block.clearfix
+        img.cart-detail__element.cart-detail__image(src="../../images/cart-detail.jpg", alt="")
+        .cart-detail__element.cart-detail__content
+          h6.cart-detail__name Áo sơ mi nam
+          p.rate.rate--new 120.000
+            sup đ
+        button.cart-detail__element.cart-detail__delete ×
+      .cart-detail__total.clearfix
+        h6 Tổng số 
+          p.rate.rate--new.float-right 240.000
+            sup đ
+      +button('GIỎ HÀNG')

@@ -1,0 +1,10 @@
+.button {
+  display: inline-block;
+  color: $white;
+  text-align: center;
+  background-color: $lighter-black-10;
+  padding: 6px;
+  &__name {
+    margin: 0;
+  }
+}
