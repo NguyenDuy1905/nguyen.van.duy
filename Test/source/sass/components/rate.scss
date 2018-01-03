@@ -1,0 +1,9 @@
+.rate {
+  font-family: 'Lobster', cursive;
+  &--new {
+    color: $green;
+  }
+  &--old {
+    color: $darker-white-71;
+  }
+}
