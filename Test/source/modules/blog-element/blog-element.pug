@@ -1,0 +1,14 @@
+include ../title/title
+
+mixin blog-element(src, title, text, post, day, month, year, comment)
+
+  .blog-element
+    img.blog-element__image(src=src, alt="")
+    +title-size-12(title)
+    .blog-element__content
+      h6.blog-element__text #{text}
+      h6.blog-element__post Bởi #{post} ( #{day} / #{month} / #{year} )
+    .blog-element__more.clearfix
+      h6.blog-element__viewmore.float-left Đọc thêm
+        i.fa.fa-angle-right(aria-hidden="true")
+      h6.blog-element__comment.float-right #{comment} Bình luận

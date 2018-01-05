@@ -1,0 +1,12 @@
+include ../title/title
+
+mixin footer-menu(titleName, item1, item2, item3, item4)
+
+  .mega-menu__block
+    .mega-menu__title
+      +title-size-14(titleName)
+    ul.mega-menu__body
+      - var list = [item1, item2, item3, item4]
+      each item in list
+        li.mega-menu__item
+          a.mega-menu__link #{item}

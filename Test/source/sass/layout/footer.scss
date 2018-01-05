@@ -1,0 +1,110 @@
+.footer {
+  color: $darker-white-71;
+  background-color: $black;
+  .content {
+    border-bottom: solid 1px $lighter-black-20;
+    padding: 50px 0 30px 0;
+    @media (max-width: 991px) {
+      padding-bottom: 26px;
+    }
+  }
+  .contact {
+    &__logo {
+      display: inline-block;
+      margin-bottom: 45px;
+      @media (max-width: 991px) {
+        margin-bottom: 25px;
+      }
+    }
+    &__item {
+      line-height: 30px;
+      img {
+        width: 15px;
+        margin-right: 7px;
+      }
+    }
+    &__space {
+      margin: 0 3px 0 2px;
+    }
+    &__website {
+      color: $green;
+      font-style: italic;
+    }
+  }
+  .mega-menu__block {
+    width: 100%;
+    padding: 0;
+    float: none;
+  }
+  .mega-menu__body {
+    margin-top: 15px;
+    @media (max-width: 991px) {
+      padding-bottom: 20px;
+    }
+    @media (max-width: 480px) {
+      border-bottom: solid 1px $lighter-black-10;
+      margin-bottom: 30px;
+    }
+  }
+  &__col:last-child {
+    .mega-menu__body {
+      @media (max-width: 480px) {
+        border-bottom: none;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .title-size-14 {
+    color: $darker-white-85;
+    &__name {
+      font-size: 18px;
+      font-weight: 400;
+    }
+    &:after {
+      content: none;
+    }
+  }
+  .mega-menu__item {
+    color: $lighter-black-29;
+  }
+  .mega-menu__link {
+    font-size: 14px;
+    line-height: 30px;
+  }
+  .copyright {
+    padding-top: 21px;
+    padding-bottom: 11px;
+    @media (max-width: 767px) {
+      padding-bottom: 25px;
+    }
+    &__wrap {
+      display: flex;
+      @media (max-width: 767px) {
+        display: block;
+      }
+    }
+    &__text {
+      font-size: 12px;
+      color: $lighter-black-29;
+      @media (max-width: 480px) {
+        margin-bottom: 10px;
+      }
+    }
+    &__right-item {
+      display: inline-block;
+      a {
+        margin: 0 11px;
+      }
+      &:first-child {
+        a {
+          margin-left: 0;
+        }
+      }
+      &:last-child {
+        a {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
