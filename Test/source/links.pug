@@ -1,10 +1,167 @@
 include modules/_page-list/_page-list
 include modules/head/head
 include modules/header/header
+include modules/button/button
+include modules/title/title
+include modules/blog-element/blog-element
+include modules/footer/footer
 
 doctype html
 html
   +head(head.home)
   body
+    //- [Header]
     +header
+    //- [Intro]
+    section.intro
+      .container
+        .intro__wrap.clearfix
+          .intro__product.text-center
+            img.intro__image.intro__image--small(src="../images/Oil.png", alt="")
+            h1.intro__name Green Vera
+            h3.intro__description Sản phẩm tinh dầu dưỡng da mới nhất của Mandala
+            h2.intro__rate Giá chỉ
+              span 750.000
+                sup đ
+            +button("MUA HÀNG")
+          img.intro__image.intro__image--big(src="../images/A-girl.png", alt="")
+    //- [Promotion]
+    section.promotion
+      .container
+        ul.promotion__list.clearfix
+          li.promotion__element
+            img.promotion__icon(src="images/plane-icon.png", alt="")
+            p.promotion__text Miễn phí vận chuyển
+          li.promotion__element
+            img.promotion__icon(src="images/gift-icon.png", alt="")
+            p.promotion__text Nhận ngay quà tặng trị giá 350.000đ
+          li.promotion__element
+            img.promotion__icon(src="images/star-icon.png", alt="")
+            p.promotion__text Giảm 30% cho đơn hàng trên 5.000.000đ
+    //- [Banner]
+    section.banner
+      .container
+        .row.banner__row
+          .banner__col.col-md-6
+            .row.banner__row
+              .banner__col.col-md-6.col-6
+                .banner__item
+                  img.banner__images.banner__images--small(src="images/banner1.jpg", alt="")
+              .banner__col.col-md-6.col-6
+                .banner__item
+                  img.banner__images.banner__images--small(src="images/banner9.jpg", alt="")
+                  +title-style('SỮA TẮM')
+                  .arrow.arrow-left.banner__arrow.banner__arrow--left
+              .banner__col.col-md-6.col-6
+                .banner__item
+                  img.banner__images.banner__images--small(src="images/banner10.jpg", alt="")
+                  +title-style('NƯỚC HOA')
+                  .arrow.arrow-right.banner__arrow.banner__arrow--right
+              .banner__col.col-md-6.col-6
+                .banner__item
+                  img.banner__images.banner__images--small(src="images/banner2.jpg", alt="")
+          .banner__col.col-md-6
+            .banner__item
+              img.banner__images.banner__images--big(src="images/banner3.jpg", alt="")
+        .row.banner__row.banner__row--reverse
+          .banner__col.col-md-6
+            .banner__item
+              img.banner__images.banner__images--big(src="images/banner4.jpg", alt="")
+          .banner__col.col-md-6
+            .row.banner__row
+              .banner__col.col-md-6.col-6
+                .banner__item
+                  img.banner__images.banner__images--small(src="images/banner8.jpg", alt="")
+                  +title-style('TRANG SỨC')
+                  .arrow.arrow-left.banner__arrow.banner__arrow--left
+              .banner__col.col-md-6.col-6
+                .banner__item
+                  img.banner__images.banner__images--small(src="images/banner5.jpg", alt="")
+              .banner__col.col-md-6.col-6
+                .banner__item
+                  img.banner__images.banner__images--small(src="images/banner6.jpg", alt="")
+              .banner__col.col-md-6.col-6
+                .banner__item
+                  img.banner__images.banner__images--small(src="images/banner7.jpg", alt="")
+                  .arrow.arrow-right.banner__arrow.banner__arrow--right
+    //- [Follow]
+    section.follow
+      .container
+        ul.follow__list.text-center
+          li.follow__item.follow__item--facebook
+            a.follow__link(href="")
+              span.follow__wrap-icon
+                i.fa.fa-facebook.follow__icon(aria-hidden="true")
+              | FACEBOOK
+          li.follow__item.follow__item--twitter
+            a.follow__link(href="")
+              span.follow__wrap-icon
+                i.fa.fa-twitter.follow__icon(aria-hidden="true")
+              | TWITTER
+          li.follow__item.follow__item--instagram
+            a.follow__link(href="")
+              span.follow__wrap-icon
+                i.fa.fa-instagram.follow__icon(aria-hidden="true")
+              | INSTAGRAM
+          li.follow__item.follow__item--google
+            a.follow__link(href="")
+              span.follow__wrap-icon
+                i.fa.fa-google-plus.follow__icon(aria-hidden="true")
+              | GOOGLE
+          li.follow__item.follow__item--pinterest
+            a.follow__link(href="")
+              span.follow__wrap-icon
+                i.fa.fa-pinterest-p.follow__icon(aria-hidden="true")
+              | PINTEREST
+          li.follow__item.follow__item--info
+            a.follow__link(href="")
+              span.follow__wrap-icon
+                i.fa.fa-info.follow__icon(aria-hidden="true")
+              | LINKEDIN
+    //- [About]
+    section.about
+      .container
+        .row
+          .col-lg-4.about__col
+            .about__element
+              +title-style("VỀ CHÚNG TÔI")
+              .about__body
+                a.about__logo(href="")
+                  img.about__image(src="images/logo.png", alt="")
+                h6.about__content GIỚI THIỆU CHUNG VỀ HANDMADE MADALA
+                h6.about__text Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt. Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.
+                a.about__viewmore(href="") Xem thêm
+          .col-lg-4.about__col
+            .about__element
+              +title-style("BLOG")
+              .about__body
+                +blog-element("images/blog-images1.png", "REVIEW SON KEM BOURJOIS VELVET", "Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.", "NamTran", "27", "05", "2015", "23")
+          .col-lg-4.about__col
+            .about__element.mail
+              +title-style("GỬI EMAIL CHO CHÚNG TÔI")
+              .about__body
+                input.about__input(type="text", placeholder="Email của bạn")
+                h6.about__text Gửi email để nhận những ưu đãi mới nhất
+                +button("GỬI")
+            .about__element.tag
+              +title-style("TAG SẢN PHẨM")
+              .about__body
+                +button("Đồng hồ")
+                +button("Túi")
+                +button("Phụ kiện")
+                +button("Đồng hồ")
+                +button("Túi")
+                +button("Giày")
+                +button("Sandal")
+                +button("Áo sơ mi")
+                +button("Nước hoa")
+                +button("Giày")
+                +button("Sandal")
+                +button("Trẻ em")
+                +button("Thời trang nữ")
+                +button("Trẻ em")
+                +button("Thời trang nữ")
+    //- [Footer]
+    +footer
+    //- [Main js]
     script(src="js/main.js")

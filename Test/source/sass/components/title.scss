@@ -14,3 +14,36 @@
     left: 0;
   }
 }
+.title-style {
+  display: inline-block;
+  text-align: center;
+  &__name {
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    color: $white;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
+  &__after {
+    position: relative;
+    color: $white;
+    &:after {
+      content: '';
+      width: 45px;
+      height: 1px;
+      background-color: $white;
+      position: absolute;
+      bottom: calc(50% - 2px);
+      left: -48px;
+    }
+    &:before {
+      content: '';
+      width: 45px;
+      height: 1px;
+      background-color: $white;
+      position: absolute;
+      bottom: calc(50% - 2px);
+      right: -48px;
+    }
+  }
+}

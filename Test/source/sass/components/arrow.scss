@@ -1,15 +1,39 @@
 // Arrow
 .arrow {
-	display: inline-block;
-	width: 0;
-	height: 0;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  position: absolute;
 }
 // Arrow up
 .arrow-up {
-	border-left: solid 11px transparent;
-	border-right: solid 11px transparent;
-	border-bottom: solid 11px $green;
-  position: absolute;
+  border-left: solid 11px transparent;
+  border-right: solid 11px transparent;
+  border-bottom: solid 11px $green;
   top: -11px;
   left: calc(50% - 11px);
+}
+// Arrow left
+.arrow-left {
+  border-top: solid 11px transparent;
+  border-bottom: solid 11px transparent;
+  border-right: solid 11px $green;
+  top: calc(50% - 11px);
+  left: -11px;
+}
+// Arrow right
+.arrow-right {
+  border-top: solid 11px transparent;
+  border-bottom: solid 11px transparent;
+  border-left: solid 11px $green;
+  top: calc(50% - 11px);
+  right: -11px;
+}
+// Arrow down
+.arrow-down {
+  border-left: solid 11px transparent;
+  border-right: solid 11px transparent;
+  border-top: solid 11px $green;
+  left: calc(50% - 11px);
+  bottom: -11px;
 }
