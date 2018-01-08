@@ -1,0 +1,21 @@
+include ../title/title
+include ../button/button
+
+mixin product(src, trademark, title, rateNew, rateOld)
+
+  .product
+    .product__image-wrap
+      img.product__image(src=src, alt="")
+    .product__title
+      h6.product__trademark #{trademark}
+      a.product__link
+        +title-size-16(title)
+    .product__rate
+      .rate.rate--new #{rateNew}
+        sup đ
+      .rate.rate--old #{rateOld}
+        sup đ
+    .product__button-wrap
+      +button("MUA HÀNG")
+      +button-icon("heart")
+      +button-icon("refresh")

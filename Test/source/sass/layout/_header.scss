@@ -7,19 +7,19 @@
     width: 100%;
     background-color: $opacity-white-2;
     border-bottom: solid 1px $darker-white-85;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 999;
   }
   .logo__image {
-    @media (max-width: 374px) {
+    @include respond-to('smallerphone-and-down') {
       width: 150px;
     }
   }
   .menu {
     margin-bottom: 0;
-    @media (max-width: 1199px) {
+    @include respond-to('desktop-and-down') {
       display: none;
       width: 100%;
       background-color: $opacity-white-2;
@@ -32,7 +32,7 @@
       display: inline-block;
       margin: 0 16px;
       position: relative;
-      @media (max-width: 1199px) {
+      @include respond-to('desktop-and-down') {
         display: list-item;
         border-bottom: dashed 1px $darker-white-91;
         margin: 0;
@@ -66,9 +66,8 @@
       font-size: 16px;
       margin-left: 2px;
       vertical-align: -1px;
-      @media (max-width: 1199px) {
-        float: right;
-        margin-top: 3px;
+      @include respond-to('desktop-and-down') {
+        display: none;
       }
     }
   }
@@ -96,7 +95,7 @@
   }
   .cart {
     transition: 0.3s;
-    @media (max-width: 1199px) {
+    @include respond-to('desktop-and-down') {
       margin-right: 0;
     }
     &:before {
@@ -128,7 +127,7 @@
     &:hover {
       cursor: pointer;
     }
-    @media (max-width: 1199px) {
+    @include respond-to('desktop-and-down') {
       display: inline-block;
       margin-left: 26px;
       margin-right: 0;

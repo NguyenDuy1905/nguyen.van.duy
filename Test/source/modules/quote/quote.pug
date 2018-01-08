@@ -1,0 +1,15 @@
+mixin quote(src, text, author, office)
+  
+  .quote.clearfix
+    .quote__wrap-image
+      img.quote__image(src=src, alt="")
+    .quote__content
+      h4.quote__text
+        span.quote__icon "
+        | #{text}
+        span.quote__icon "
+      p.quote__author
+        | #{author}
+        h5.quote__office _ #{office}
+    .quote__bg
+      img(src="images/slider-bg.png", alt="")

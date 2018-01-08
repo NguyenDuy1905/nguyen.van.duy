@@ -1,4 +1,7 @@
 mixin button(buttonName)
-
   .button
     h6.button__name #{buttonName}
+
+mixin button-icon(buttonIcon)
+  .button
+    i.button__icon.fa(class="fa-"+buttonIcon ,aria-hidden="true")

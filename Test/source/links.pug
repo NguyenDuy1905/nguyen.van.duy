@@ -4,6 +4,8 @@ include modules/header/header
 include modules/button/button
 include modules/title/title
 include modules/blog-element/blog-element
+include modules/quote/quote
+include modules/product/product
 include modules/footer/footer
 
 doctype html
@@ -84,6 +86,48 @@ html
                 .banner__item
                   img.banner__images.banner__images--small(src="images/banner7.jpg", alt="")
                   .arrow.arrow-right.banner__arrow.banner__arrow--right
+    //- [Slider]
+    section.slider
+      .container
+        .owl-carousel.owl-theme.js-slider
+          .item
+            +quote("images/slider1.jpg", "Vẫn là vẻ bề ngoài vô cùng đơn giản với các tông màu trắng, hồng làm chủ đạo nhưng lại tạo ra sức hút kỳ lạ với những ai cầm trên tay sản phẩm ấy! Với công nghệ cải tiến mới nhất, hãng Rohto", "TUTILE", "Giám đốc phát triển sản phẩm")
+          .item
+            +quote("images/slider1.jpg", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida at libero in placerat. Duis tempor, nisl sed congue luctus, nulla neque accumsan eros, sed molestie ex dolor et massa", "TUTILE", "Giám đốc phát triển sản phẩm")
+          .item
+            +quote("images/slider1.jpg", "Vẫn là vẻ bề ngoài vô cùng đơn giản với các tông màu trắng, hồng làm chủ đạo nhưng lại tạo ra sức hút kỳ lạ với những ai cầm trên tay sản phẩm ấy! Với công nghệ cải tiến mới nhất, hãng Rohto", "TUTILE", "Giám đốc phát triển sản phẩm")
+    //- [Product-Slider]
+    .product-slider
+      .container
+        ul.product-slider__menu
+          li.product-slider__list
+            a.product-slider__link(href="")
+              +title-style("Sản phẩm mới")
+          li.product-slider__list.product-slider__list--active
+            a.product-slider__link(href="")
+              +title-style("Sản phẩm bán chạy")
+          li.product-slider__list
+            a.product-slider__link(href="")
+              +title-style("Sản phẩm đặc biệt")
+        .product-slider__tab
+          ul.product-slider__filter
+            - var list = ['Mỹ phẩm', 'Chăm sóc da', 'Dành cho tóc', 'Nước hoa', 'Trang sức', 'Quà tặng']
+            each item in list
+              li.product-slider__item
+                a.product-slider__link(href="") #{item}
+          .owl-carousel.owl-theme.js-product-slider
+            .item
+              +product("images/product1.png", "OHUI", "Mỹ phẩm châu Âu", "355.000", "450.000")
+            .item
+              +product("images/product2.png", "HOME", "Mỹ phẩm châu Âu", "355.000", "450.000")
+            .item
+              +product("images/product3.png", "DEBORA", "Mỹ phẩm châu Âu", "355.000", "450.000")
+            .item
+              +product("images/product4.png", "SARVON", "Mỹ phẩm châu Âu", "355.000", "450.000")
+            .item
+              +product("images/product1.png", "OHUI", "Mỹ phẩm châu Âu", "355.000", "450.000")
+            .item
+              +product("images/product2.png", "HOME", "Mỹ phẩm châu Âu", "355.000", "450.000")
     //- [Follow]
     section.follow
       .container
@@ -122,7 +166,7 @@ html
     section.about
       .container
         .row
-          .col-lg-4.about__col
+          .col-md-6.col-lg-4.about__col
             .about__element
               +title-style("VỀ CHÚNG TÔI")
               .about__body
@@ -131,36 +175,37 @@ html
                 h6.about__content GIỚI THIỆU CHUNG VỀ HANDMADE MADALA
                 h6.about__text Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt. Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.
                 a.about__viewmore(href="") Xem thêm
-          .col-lg-4.about__col
+          .col-md-6.col-lg-4.about__col
             .about__element
               +title-style("BLOG")
               .about__body
                 +blog-element("images/blog-images1.png", "REVIEW SON KEM BOURJOIS VELVET", "Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.", "NamTran", "27", "05", "2015", "23")
           .col-lg-4.about__col
-            .about__element.mail
-              +title-style("GỬI EMAIL CHO CHÚNG TÔI")
-              .about__body
-                input.about__input(type="text", placeholder="Email của bạn")
-                h6.about__text Gửi email để nhận những ưu đãi mới nhất
-                +button("GỬI")
-            .about__element.tag
-              +title-style("TAG SẢN PHẨM")
-              .about__body
-                +button("Đồng hồ")
-                +button("Túi")
-                +button("Phụ kiện")
-                +button("Đồng hồ")
-                +button("Túi")
-                +button("Giày")
-                +button("Sandal")
-                +button("Áo sơ mi")
-                +button("Nước hoa")
-                +button("Giày")
-                +button("Sandal")
-                +button("Trẻ em")
-                +button("Thời trang nữ")
-                +button("Trẻ em")
-                +button("Thời trang nữ")
+            .row
+              .col-md-6.col-lg-12.about__element.mail
+                +title-style("GỬI EMAIL CHO CHÚNG TÔI")
+                .about__body
+                  input.about__input(type="text", placeholder="Email của bạn")
+                  h6.about__text Gửi email để nhận những ưu đãi mới nhất
+                  +button("GỬI")
+              .col-md-6.col-lg-12.about__element.tag
+                +title-style("TAG SẢN PHẨM")
+                .about__body
+                  +button("Đồng hồ")
+                  +button("Túi")
+                  +button("Phụ kiện")
+                  +button("Đồng hồ")
+                  +button("Túi")
+                  +button("Giày")
+                  +button("Sandal")
+                  +button("Áo sơ mi")
+                  +button("Nước hoa")
+                  +button("Giày")
+                  +button("Sandal")
+                  +button("Trẻ em")
+                  +button("Thời trang nữ")
+                  +button("Trẻ em")
+                  +button("Thời trang nữ")
     //- [Footer]
     +footer
     //- [Main js]

@@ -63,7 +63,8 @@ var scss = {
     errLogToConsole: true,
     includePaths: [
       './node_modules/bootstrap-v4-dev/scss',
-      './node_modules/font-awesome/scss/'
+      './node_modules/font-awesome/scss/',
+      './node_modules/owl.carousel2/dist/assets/'
     ]
   }
 };
@@ -83,7 +84,8 @@ var fonts = {
 var js = {
   in: [
     source + 'js/*.*',
-    './node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js'
+    './node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js',
+    './node_modules/owl.carousel2/dist/owl.carousel.min.js'
   ],
   out: dest + 'js/'
 };

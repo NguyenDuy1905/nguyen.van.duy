@@ -1,6 +1,6 @@
 @import 'bootstrap';
 @import 'font-awesome';
-@import 'vendors/bootstrap-override-variable';
+@import 'owl.carousel';
 
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
@@ -11,6 +11,9 @@
 @import 'base/colors';
 @import 'base/normalize';
 
+@import 'vendors/bootstrap-override-variable';
+@import 'vendors/owl-carousel-override-variable';
+
 @import 'components/mega-menu';
 @import 'components/cart-detail';
 @import 'components/title';
@@ -18,6 +21,8 @@
 @import 'components/button';
 @import 'components/rate';
 @import 'components/blog-element';
+@import 'components/quote';
+@import 'components/product';
 @import 'components/footer-menu';
 
 @import 'layout/header';
