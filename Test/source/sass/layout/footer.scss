@@ -4,7 +4,7 @@
   .content {
     border-bottom: solid 1px $lighter-black-20;
     padding: 50px 0 30px 0;
-    @media (max-width: 991px) {
+    @include respond-to('tablet-and-down') {
       padding-bottom: 26px;
     }
   }
@@ -12,7 +12,7 @@
     &__logo {
       display: inline-block;
       margin-bottom: 45px;
-      @media (max-width: 991px) {
+      @include respond-to('tablet-and-down') {
         margin-bottom: 25px;
       }
     }
@@ -38,17 +38,17 @@
   }
   .mega-menu__body {
     margin-top: 15px;
-    @media (max-width: 991px) {
+    @include respond-to('tablet-and-down') {
       padding-bottom: 20px;
     }
-    @media (max-width: 480px) {
+    @include respond-to('smallphone-and-down') {
       border-bottom: solid 1px $lighter-black-10;
       margin-bottom: 30px;
     }
   }
   &__col:last-child {
     .mega-menu__body {
-      @media (max-width: 480px) {
+      @include respond-to('smallphone-and-down') {
         border-bottom: none;
         margin-bottom: 0;
       }
@@ -66,6 +66,9 @@
   }
   .mega-menu__item {
     color: $lighter-black-29;
+    &:hover {
+      color: $green;
+    }
   }
   .mega-menu__link {
     font-size: 14px;
@@ -74,19 +77,19 @@
   .copyright {
     padding-top: 21px;
     padding-bottom: 11px;
-    @media (max-width: 767px) {
+    @include respond-to('phone-and-down') {
       padding-bottom: 25px;
     }
     &__wrap {
       display: flex;
-      @media (max-width: 767px) {
+      @include respond-to('phone-and-down') {
         display: block;
       }
     }
     &__text {
       font-size: 12px;
       color: $lighter-black-29;
-      @media (max-width: 480px) {
+      @include respond-to('smallphone-and-down') {
         margin-bottom: 10px;
       }
     }

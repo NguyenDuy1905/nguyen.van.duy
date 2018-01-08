@@ -1,10 +1,10 @@
 // [Intro]
 .intro {
   background-color: $darker-white-91;
-  @media (max-width: 991px) {
+  @include respond-to('tablet-and-down') {
     padding-top: 60px;
   }
-  @media (max-width: 767px) {
+  @include respond-to('phone-and-down') {
     overflow: hidden;
   }
   &__product {
@@ -14,25 +14,25 @@
     left: 0;
     bottom: 50px;
     z-index: 998;
-    @media (max-width: 1199px) {
+    @include respond-to('desktop-and-down') {
       bottom: 40px;
       left: 15px;
     }
-    @media (max-width: 991px) {
+    @include respond-to('tablet-and-down') {
       width: 40%;
       bottom: 30px;
     }
-    @media (max-width: 767px) {
+    @include respond-to('phone-and-down') {
       width: 288px;
     }
-    @media (max-width: 480px) {
+    @include respond-to('smallphone-and-down') {
       width: 240px;
     }
   }
   &__image--small {
     mix-blend-mode: multiply;
     filter: contrast(1.2);
-    @media (max-width: 1199px) {
+    @include respond-to('desktop-and-down') {
       width: 170px;
     }
   }
@@ -44,11 +44,11 @@
     white-space: nowrap;
     margin-top: -15px;
     margin-bottom: 0;
-    @media (max-width: 1199px) {
+    @include respond-to('desktop-and-down') {
       font-size: 88px;
       word-spacing: -30px;
     }
-    @media (max-width: 480px) {
+    @include respond-to('smallphone-and-down') {
       font-size: 68px;
       word-spacing: -20px;
     }
@@ -60,26 +60,26 @@
     font-size: 19px;
     color: $brown;
     margin-top: -7px;
-    @media (max-width: 1199px) {
+    @include respond-to('desktop-and-down') {
       font-size: 16px;
       margin-top: 7px;
     }
-    @media (max-width: 991px) {
+    @include respond-to('tablet-and-down') {
       padding: 0 20px;
       margin-top: 17px;
       margin-bottom: 14px;
     }
-    @media (max-width: 480px) {
+    @include respond-to('smallphone-and-down') {
       padding: 0;
     }
   }
   &__rate {
     font-size: 45px;
     color: $green;
-    @media (max-width: 1199px) {
+    @include respond-to('desktop-and-down') {
       font-size: 32px;
     }
-    @media (max-width: 480px) {
+    @include respond-to('smallphone-and-down') {
       font-size: 26px;
     }
   }
@@ -101,7 +101,7 @@
       padding: 0;
       margin-bottom: -1px;
     }
-    @media (max-width: 991px) {
+    @include respond-to('tablet-and-down') {
       margin-top: 23px;
     }
   }
@@ -112,18 +112,16 @@
     display: inline-block;
     float: right;
     margin-right: -40px;
-    @media (max-width: 1199px) {
+    @include respond-to('desktop-and-down') {
       width: 400px;
       margin-right: -10px;
     }
-    @media (max-width: 767px) {
+    @include respond-to('phone-and-down') {
       position: relative;
       right: -230px;
     }
-    @media (max-width: 480px) {
+    @include respond-to('smallphone-and-down') {
       max-width: unset;
-    }
-    @media (max-width: 399px) {
       right: -310px;
     }
   }
@@ -131,7 +129,7 @@
 // [Promotion]
 .promotion {
   padding: 40px 0;
-  @media (max-width: 480px) {
+  @include respond-to('smallphone-and-down') {
     padding: 20px 0;
   }
   &__list {
@@ -145,7 +143,7 @@
     &:first-child {
       border-left: none;
     }
-    @media (max-width: 480px) {
+    @include respond-to('smallphone-and-down') {
       width: 100%;
       text-align: left;
       border-left: none;
@@ -159,14 +157,14 @@
   }
   &__icon {
     margin-bottom: 8px;
-    @media (max-width: 480px) {
+    @include respond-to('smallphone-and-down') {
       float: left;
       margin-left: 20%;
     }
   }
   &__text {
     margin-bottom: 0;
-    @media (max-width: 480px) {
+    @include respond-to('smallphone-and-down') {
       width: 60%;
       float: right;
     }
@@ -204,7 +202,7 @@
     right: -15px;
   }
   &__images--big {
-    @media (max-width: 480px) {
+    @include respond-to('smallphone-and-down') {
       padding: 20px 0;
     }
   }
@@ -214,32 +212,32 @@
     top: calc(50% - 27px);
     left: 0;
     right: 0;
-    @media (max-width: 991px) {
+    @include respond-to('tablet-and-down') {
       top: calc(50% - 20px);
     }
     &__name {
-      @media (max-width: 991px) {
+      @include respond-to('tablet-and-down') {
         font-size: 18px;
       }
     }
     &__after:after, &__after:before {
-      @media (max-width: 991px) {
+      @include respond-to('tablet-and-down') {
         width: 25px;
       }
     }
     &__after:after {
-      @media (max-width: 991px) {
+      @include respond-to('tablet-and-down') {
         left: -28px;
       }
     }
     &__after:before {
-      @media (max-width: 991px) {
+      @include respond-to('tablet-and-down') {
         right: -28px;
       }
     }
   }
   &__row--reverse {
-    @media (max-width: 480px) {
+    @include respond-to('smallphone-and-down') {
       margin-top: -20px;
     }
     .banner__arrow {
@@ -259,6 +257,122 @@
     }
   }
 }
+// [Slider]
+.slider {
+  padding: 80px 0 70px 0;
+  @include respond-to('phone-and-down') {
+    padding: 20px 0 50px 0;
+  }
+}
+// [Product-Slider]
+.product-slider {
+  background-image: url('../../images/product-slider-bg.jpg');
+  border: solid 1px $darker-white-91;
+  border-right: none;
+  border-left: none;
+  padding-top: 70px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  &__filter {
+    text-align: center;
+    margin-bottom: 55px;
+    @include respond-to('phone-and-down') {
+      border-top: solid 1px $darker-white-91;
+      padding-top: 20px;
+      margin-top: 5px;
+    }
+  }
+  &__item {
+    display: inline-block;
+    padding: 0 16px;
+    position: relative;
+    &:after {
+      content: ".";
+      position: absolute;
+      bottom: 0;
+      right: -3px;
+    }
+  }
+  &__item:last-child {
+    &:after {
+      display: none;
+    }
+  }
+  &__link {
+    color: $lighter-black-52;
+    &:hover {
+      color: $green;
+    }
+  }
+  .title-style__name {
+    font-family: 'UTM Androgyne';
+    color: $darker-white-71;
+    font-size: 18px;
+  }
+  &__menu {
+    text-align: center;
+  }
+  &__list {
+    display: inline-block;
+    padding: 0 25px;
+    margin-bottom: 50px;
+    position: relative;
+    @include respond-to('tablet-and-down') {
+      padding: 0 15px;
+    }
+    @include respond-to('phone-and-down') {
+      display: block;
+      text-align: left;
+      margin-bottom: 0;
+    }
+  }
+  &__list::after {
+    content: '';
+    width: 1px;
+    height: 26px;
+    background-color: $darker-white-91;
+    position: absolute;
+    right: 0;
+    top: 0;
+    @include respond-to('phone-and-down') {
+      display: none;
+    }
+  }
+  &__list:last-child {
+    &:after {
+      display: none;
+    }
+  }
+  .title-style__after {
+    color: transparent;
+    &:before, &:after {
+      background-color: transparent;
+    }
+  }
+  &__list--active {
+    @include respond-to('phone-and-down') {
+      margin-top: -10px;
+      margin-bottom: 15px;
+    }
+    .title-style__name {
+      font-size: 34px;
+      color: $green;
+    }
+    .title-style__after {
+      color: $lighter-black-45;
+      top: 15px;
+      &:before, &:after {
+        background-color: $lighter-black-45;
+      }
+      @include respond-to('phone-and-down') {
+        display: none;
+      }
+    }
+    &::after {
+      top: 18px;
+    }
+  }
+}
 // [Follow]
 .follow {
   padding: 40px 0;
@@ -266,7 +380,8 @@
     display: inline-block;
     color: $lighter-black-2;
     padding: 0 40px;
-    @media (max-width: 420px) {
+    transition: 0.3s;
+    @include respond-to('smallphone-and-down') {
       padding: 0 30px;
     }
     &:first-child {
@@ -275,13 +390,17 @@
     &:last-child {
       padding-right: 0;
     }
+    &:hover {
+      color: $green;
+      cursor: pointer;
+    }
     &--info, &--pinterest {
-      @media (max-width: 1199px) {
+      @include respond-to('desktop-and-down') {
         display: none;
       }
     }
     &--google, &--instagram {
-      @media (max-width: 767px) {
+      @include respond-to('phone-and-down') {
         display: none;
       }
     }
@@ -290,6 +409,9 @@
     font-size: 10px;
     color: inherit;
     font-weight: 600;
+    &:hover {
+      color: $green;
+    }
   }
   &__wrap-icon {
     display: inline-block;
@@ -309,11 +431,11 @@
 // [About]
 .about {
   padding: 25px 0 60px 0;
-  @media (max-width: 991px) {
+  @include respond-to('tablet-and-down') {
     padding-bottom: 0;
   }
   &__element {
-    @media (max-width: 991px) {
+    @include respond-to('tablet-and-down') {
       margin-bottom: 50px;
     }
   }
@@ -359,6 +481,9 @@
   &__viewmore {
     font-size: 12px;
     color: $lighter-black-52;
+    &:hover {
+      color: $green;
+    }
   }
   &__input {
     width: 100%;
@@ -391,6 +516,12 @@
     padding: 8px 16px;
     margin-top: 5px;
     margin-bottom: 35px;
+    transition: 0.3s;
+    &:hover {
+      color: $white;
+      background-color: $green;
+      cursor: pointer;
+    }
     &__name {
       font-weight: 600;
     }

@@ -25,6 +25,13 @@
   &__post, &__viewmore, &__comment {
     color: $darker-white-71;
   }
+  &__viewmore, &__comment {
+    transition: 0.3s;
+    &:hover {
+      color: $green;
+      cursor: pointer;
+    }
+  }
   &__post {
     font-style: italic;
   }

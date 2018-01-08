@@ -1,18 +1,18 @@
 .footer-menu {
   padding-top: 31px;
-  @media (max-width: 991px) {
+  @include respond-to('tablet-and-down') {
     padding-top: 26px;
   }
   .title-h3 {
     margin-bottom: 25px;
-    @media (max-width: 991px) {
+    @include respond-to('tablet-and-down') {
       margin-bottom: 15px;
     }
     &__name {
       border-bottom: solid 1px $lighter-black-20;
       padding-bottom: 25px;
-      @media (max-width: 991px) {
-        padding-bottom: 10px
+      @include respond-to('tablet-and-down') {
+        padding-bottom: 10px;
       }
     }
   }
