@@ -1,0 +1,7 @@
+mixin linking(parentLinking, childrenLinking)
+  .linking
+    ol.breadcrumb
+      li.linking__item
+        a.linking__link #{parentLinking}
+      li.linking__item.linking__item--active
+        a.linking__link #{childrenLinking}

@@ -1,8 +1,28 @@
 .blog-element {
+  &:hover {
+    .blog-element__image-hover {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  &__wrap {
+    position: relative;
+  }
   &__image {
     width: 100%;
     margin-top: 2px;
     margin-bottom: 15px;
+  }
+  &__image-hover {
+    width: 100%;
+    height: calc(100% - 17px);
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    transition: 0.3s;
+    z-index: 999;
   }
   .title-size-12, &__content {
     border-bottom: solid 1px $darker-white-91;
@@ -10,6 +30,13 @@
   .title-size-12 {
     &__name {
       font-weight: 600;
+    }
+  }
+  &__link {
+    color: $lighter-black-2;
+    transition: 0.3s;
+    &:hover {
+      color: $green;
     }
   }
   &__content {

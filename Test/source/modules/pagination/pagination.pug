@@ -1,0 +1,16 @@
+mixin pagination
+  .pagination
+    .pagination__view-style.mr-auto
+      each item in [1, 2]
+        button.pagination__button
+          img(src="images/menu-icon"+item+".png", alt="")
+    ul.pagination__list.ml-auto
+      li.pagination__item
+        a.pagination__link
+          i.pagination__icon.pagination__icon--prev.fa.fa-caret-left
+      each item in [1, 2, 3]
+        li.pagination__item
+          a.pagination__link #{item}
+      li.pagination__item
+        a.pagination__link
+          i.pagination__icon.pagination__icon--next.fa.fa-caret-right

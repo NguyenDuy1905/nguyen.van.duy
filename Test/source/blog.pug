@@ -1,0 +1,31 @@
+include modules/_page-list/_page-list
+include modules/head/head
+include modules/header/header
+include modules/linking/linking
+include modules/title/title
+include modules/pagination/pagination
+include modules/blog-element/blog-element
+include modules/footer/footer
+
+doctype html
+html
+  +head(head.home)
+  body
+    //- [Header]
+    +header
+    //- [Blog page]
+    section.blog
+      .container
+        +linking('Home', 'Blog')
+        +title-size-28('BLOG')
+        +pagination
+        .blog__content
+          .row
+            each item in [1, 2, 3, 4, 5, 6, 7, 8, 9]
+              .col-sm-6.col-lg-4
+                +blog-element("images/blog-images1.png", "REVIEW SON KEM BOURJOIS VELVET", "Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.", "NamTran", "27", "05", "2015", "23")
+        +pagination
+    //- [Footer]
+    +footer
+    //- [Main js]
+    script(src="js/main.js")

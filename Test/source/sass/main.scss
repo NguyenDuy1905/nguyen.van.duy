@@ -23,9 +23,12 @@
 @import 'components/blog-element';
 @import 'components/quote';
 @import 'components/product';
+@import 'components/linking';
+@import 'components/pagination';
 @import 'components/footer-menu';
 
 @import 'layout/header';
 @import 'layout/footer';
 
 @import 'page/home';
+@import 'page/blog';

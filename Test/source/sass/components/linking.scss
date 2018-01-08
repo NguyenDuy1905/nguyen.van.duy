@@ -1,0 +1,24 @@
+.linking {
+  .breadcrumb {
+    background-color: $white;
+    border-bottom: dashed 1px $darker-white-91;
+    border-radius: 0;
+    padding: 15px 0;
+  }
+  &__item {
+    display: inline-block;
+    color: $lighter-black-45;
+  }
+  &__item--active {
+    color: $green;
+    &:before {
+      content: "\f105";
+      font-family: 'FontAwesome';
+      padding: 0 3px;
+      vertical-align: middle;
+    }
+  }
+  &__link {
+    font-size: 12px;
+  }
+}

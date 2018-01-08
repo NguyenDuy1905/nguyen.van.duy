@@ -1,10 +1,12 @@
 include ../title/title
 
 mixin blog-element(src, title, text, post, day, month, year, comment)
-
   .blog-element
-    img.blog-element__image(src=src, alt="")
-    +title-size-12(title)
+    .blog-element__wrap
+      img.blog-element__image(src=src, alt="")
+      img.blog-element__image-hover(src="../../images/blog-images-hover.png", alt="")
+    a.blog-element__link(href="")
+      +title-size-12(title)
     .blog-element__content
       h6.blog-element__text #{text}
       h6.blog-element__post Bởi #{post} ( #{day} / #{month} / #{year} )
